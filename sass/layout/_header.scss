@@ -2,7 +2,7 @@
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   position: relative;
-  height: 95vh;
+  height: 120vh;
   background-image: linear-gradient(to right, rgba($color-primary, 0.8) 45%,
           rgba($color-primary-light, 0.6)),
   url("../img/header_img.jpg");
@@ -10,8 +10,8 @@
   --webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   @include respond(phone) {
-    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-    --webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    --webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   }
 
   &__text {

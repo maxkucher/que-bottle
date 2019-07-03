@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to right, rgba($color-primary, 0.4), rgba($color-secondary-light, 0.4));
+  background-color: $white-light;
   padding: 3rem;
   box-sizing: border-box;
   @include respond(tab-port) {

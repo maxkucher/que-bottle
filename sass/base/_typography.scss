@@ -47,9 +47,13 @@ body {
   background-image: linear-gradient(to right, $color-secondary-light, $color-secondary);
   -webkit-background-clip: text;
   margin-bottom: 3rem;
+
+  &-white {
+    background-image: linear-gradient(to right, rgba($white,1),rgba($white,1));
+  }
 }
 
-.paragraph{
+.paragraph {
   font-size: 2rem;
   word-spacing: .8rem;
   letter-spacing: .1rem;

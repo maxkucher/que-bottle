@@ -1,5 +1,12 @@
-.section-about{
+.section-about {
   background-color: $white;
-  margin-top: -25rem;
-  padding: 30rem 0 10rem 0;
+  margin: -25rem 0;
+  padding: 25rem 0 25rem 0;
+  --webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+
+  &-orange {
+    background-image: radial-gradient( lighten($color-primary, 10%),$color-primary);
+    color: $white;
+  }
 }
