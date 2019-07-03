@@ -1,5 +1,25 @@
-.header{
+.header {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
   position: relative;
   height: 95vh;
+  background-image: linear-gradient(to right, rgba($color-primary, 0.8) 45%,
+          rgba($color-primary-light, 0.6)),
+  url("../img/header_img.jpg");
+  background-size: cover;
+  --webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    --webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
 
 }
