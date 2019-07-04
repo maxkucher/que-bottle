@@ -1,12 +1,19 @@
 .section-about {
-  background-color: $white;
   margin: -25rem 0;
   padding: 25rem 0 25rem 0;
   --webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  background-size: cover;
 
-  &-orange {
-    background-image: radial-gradient( lighten($color-primary, 10%),$color-primary);
+  &-1 {
+    background-image: linear-gradient(to right,rgba($white, .5), rgba($color-primary,0.8)),
+    url("../img/bottle_1.jpg");
+    color: $white;
+  }
+
+  &-2 {
+    background-image: linear-gradient(to right, rgba($color-primary, .5), rgba($color-primary, 0.8)),
+    url("../img/bottle_2.jpg");
     color: $white;
   }
 }

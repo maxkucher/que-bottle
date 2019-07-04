@@ -5,26 +5,53 @@
   &:visited {
     letter-spacing: .2rem;
     font-weight: 200;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    padding: 1rem 4rem;
+    padding: 1rem 5rem;
     border-radius: .8rem;
     transition: all .2s;
     margin: 2rem 0;
-    box-shadow: 0 3rem 3rem rgba($black, 0.2);
+    box-shadow: 0 1rem 1rem rgba($black, 0.2);
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+
+    &:after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($black, 0.2);
+    outline: none;
   }
 
   &-white {
     color: $color-primary;
     background-color: $white;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $white;
+    }
   }
 
   &-orange {
     color: $white;
     background-color: $color-primary;
+
+    &:hover {
+      color: $color-primary;
+      background-color: $white;
+    }
   }
 
 
