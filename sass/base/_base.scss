@@ -22,15 +22,6 @@ html {
 }
 
 body {
-  padding: 3rem;
-  box-sizing: border-box;
-  @include respond(tab-port){
-    padding: 0;
-    background-color: orangered;
-  }
-}
-/*
-body {
   background:
           linear-gradient(63deg, $color-primary 23%, transparent 23%) 7px 0,
           linear-gradient(63deg, transparent 74%, $color-primary 78%),
@@ -43,4 +34,4 @@ body {
     padding: 0;
   }
 
-}*/
+}
