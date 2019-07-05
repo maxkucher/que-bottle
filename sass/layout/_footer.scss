@@ -1,0 +1,20 @@
+.footer {
+  padding: 10rem 0;
+  font-size: 1.3rem;
+  background-image: linear-gradient(to top, $color-secondary-light, darken($color-primary-light,10));
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  &-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &-img{
+      max-width: 20%;
+      height: auto;
+    }
+  }
+}

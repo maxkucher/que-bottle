@@ -39,17 +39,17 @@ body {
   letter-spacing: .2rem;
   width: 100%;
   display: inline-block;
-  font-size: 4rem;
+  font-size: 5rem;
   padding: 1.5rem;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 700;
   color: transparent;
   background-image: linear-gradient(to right, $color-secondary-light, $color-secondary);
   -webkit-background-clip: text;
   margin-bottom: 3rem;
 
   &-white {
-    background-image: linear-gradient(to right, rgba($white,1),rgba($white,1));
+    background-image: linear-gradient(to right, rgba($white,1), rgba($white,1));
   }
 }
 
@@ -58,4 +58,7 @@ body {
   word-spacing: .8rem;
   letter-spacing: .1rem;
   font-weight: 100;
+  background-color: rgba($color-secondary,0.2);
+  padding: 3rem 1rem;
+  border-radius: .3rem;
 }
