@@ -104,7 +104,7 @@ body {
   font-size: 5rem;
   padding: 1.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: transparent;
   background-image: linear-gradient(to right, #DAB180, #804620);
   -webkit-background-clip: text;
@@ -195,13 +195,15 @@ body {
   .order-form {
     width: 70%;
     margin: auto;
-    background-image: linear-gradient(to center, rgba(246, 115, 2, 0.8), rgba(245, 115, 2, 0.8));
+    box-shadow: 0 2rem 3rem rgba(17, 17, 17, 0.2);
+    background-color: rgba(17, 17, 17, 0.4);
     border-radius: 1rem;
-    padding: 3.5rem; }
+    padding: 5rem 2rem; }
 
 .btn, .btn:link, .btn:visited {
   letter-spacing: .2rem;
-  font-weight: 200;
+  font-weight: 100;
+  font-family: inherit;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -214,14 +216,14 @@ body {
   box-shadow: 0 1rem 1rem rgba(17, 17, 17, 0.2); }
 
 .btn:hover {
-  transform: translateY(-0.3rem);
+  transform: translateY(0.3rem);
   box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.2); }
   .btn:hover:after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active, .btn:focus {
-  transform: translateY(-0.1rem);
+  transform: translateY(0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.2);
   outline: none; }
 
@@ -232,10 +234,10 @@ body {
     background-color: #804620;
     color: #eaeaea; }
 
-.btn-orange {
+.btn-dark {
   color: #eaeaea;
   background-color: #804620; }
-  .btn-orange:hover {
+  .btn-dark:hover {
     color: #804620;
     background-color: #eaeaea; }
 
@@ -300,7 +302,7 @@ body {
   text-align: center;
   transition: all 500ms; }
   .card:hover {
-    transform: translateY(-0.5rem);
+    transform: translateY(0.5rem);
     box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.5); }
   .card__heading {
     padding: 1rem 3rem; }
@@ -311,12 +313,12 @@ body {
     display: block;
     font-size: 1.8rem; }
     .card__content-header {
-      font-size: 2rem;
+      font-size: 4rem;
       font-weight: 200;
-      margin-bottom: 2rem; }
+      margin-bottom: 3rem; }
     .card__content-price {
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 4rem;
+      font-weight: 300;
       margin-bottom: 2rem; }
 
 .checkout-button {

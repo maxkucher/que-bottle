@@ -4,7 +4,8 @@
   &:link,
   &:visited {
     letter-spacing: .2rem;
-    font-weight: 200;
+    font-weight: 100;
+    font-family: inherit;
     font-size: 2rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -18,7 +19,7 @@
   }
 
   &:hover {
-    transform: translateY(-0.3rem);
+    transform: translateY(0.3rem);
     box-shadow: 0 1rem 2rem rgba($black, 0.2);
 
     &:after {
@@ -29,7 +30,7 @@
 
   &:active,
   &:focus {
-    transform: translateY(-.1rem);
+    transform: translateY(.1rem);
     box-shadow: 0 .5rem 1rem rgba($black, 0.2);
     outline: none;
   }
@@ -44,7 +45,7 @@
     }
   }
 
-  &-orange {
+  &-dark {
     color: $white;
     background-color: $color-secondary;
 

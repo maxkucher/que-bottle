@@ -9,7 +9,7 @@
   transition: all 500ms;
 
   &:hover{
-    transform: translateY(-.5rem);
+    transform: translateY(.5rem);
     box-shadow: 0 .5rem 1rem rgba($black,0.5);
 
   }
@@ -28,14 +28,14 @@
     font-size: 1.8rem;
 
     &-header{
-      font-size: 2rem;
+      font-size: 4rem;
       font-weight: 200;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
 
     &-price{
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 4rem;
+      font-weight: 300;
       margin-bottom: 2rem;
     }
   }
