@@ -35,21 +35,21 @@
   }
 
   &-white {
-    color: $color-primary;
+    color: $color-secondary;
     background-color: $white;
 
     &:hover {
-      background-color: $color-primary;
+      background-color: $color-secondary;
       color: $white;
     }
   }
 
   &-orange {
     color: $white;
-    background-color: $color-primary;
+    background-color: $color-secondary;
 
     &:hover {
-      color: $color-primary;
+      color: $color-secondary;
       background-color: $white;
     }
   }
