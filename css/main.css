@@ -302,6 +302,7 @@ body {
     display: block; }
 
 .features-card {
+  min-height: 95vh;
   padding: 4rem 2rem;
   width: 70%;
   margin: auto;
