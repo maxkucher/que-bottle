@@ -217,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.compile">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/que/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -233,8 +233,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.compile" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="npm.compile" />
       </list>
     </recent_temporary>
   </component>
