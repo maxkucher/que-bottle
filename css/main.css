@@ -110,7 +110,9 @@ body {
   -webkit-background-clip: text;
   margin-bottom: 3rem; }
   .heading-secondary-white {
-    background-image: linear-gradient(to right, #eaeaea, #eaeaea); }
+    background-image: linear-gradient(to right, #eaeaea, white); }
+  .heading-secondary-orange {
+    background-image: linear-gradient(to right, #f57302, #fd8e2d); }
 
 .paragraph {
   font-size: 2rem;
@@ -188,6 +190,13 @@ body {
   background-image: linear-gradient(to bottom, rgba(245, 115, 2, 0.2) 60%, rgba(247, 231, 176, 0.4)), url("../img/nature.jpg");
   background-size: 10%;
   background-position: bottom; }
+
+.section-features {
+  min-height: 130vh;
+  padding: 8rem 1rem;
+  background-image: linear-gradient(to bottom, rgba(245, 115, 2, 0.5) 60%, rgba(247, 231, 176, 0.7)), url("../img/bottles.jpg");
+  background-size: contain;
+  background-position: center; }
 
 .order {
   position: relative;
@@ -291,6 +300,40 @@ body {
   .form .btn {
     width: 100%;
     display: block; }
+
+.features-card {
+  padding: 4rem 2rem;
+  width: 70%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(234, 234, 234, 0.95));
+  box-shadow: 0 1rem 1rem rgba(17, 17, 17, 0.4);
+  border-radius: 1rem; }
+  .features-card .active > * {
+    color: #c25b02;
+    transform: scale(1.05);
+    transition: all 1s; }
+  .features-card__tab-header {
+    cursor: pointer;
+    transition: all 500ms; }
+    .features-card__tab-header:hover, .features-card__tab-header:focus {
+      transform: scale(1.05) translateX(-0.5rem); }
+  .features-card__content {
+    padding: 3rem;
+    transition: all 0.66s ease-out; }
+  .features-card__list {
+    list-style: none;
+    margin: auto;
+    transition: all 500ms; }
+    .features-card__list-item {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #804620;
+      margin-top: .5rem; }
+      .features-card__list-item:not(:last-child) {
+        margin-bottom: .5rem; }
+      .features-card__list-item i.icon {
+        color: #F57302;
+        font-size: 1.5em; }
 
 .card {
   background-color: #ffffff;

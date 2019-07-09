@@ -35,6 +35,15 @@
   background-position: bottom;
 }
 
+.section-features{
+  min-height: 130vh;
+  padding: 8rem 1rem;
+  background-image: linear-gradient(to bottom, rgba($color-primary, .5) 60%, rgba($color-primary-light, .7)),
+  url("../img/bottles.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
 .order {
   position: relative;
   height: 95vh;

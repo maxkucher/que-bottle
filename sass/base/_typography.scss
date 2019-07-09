@@ -49,7 +49,11 @@ body {
   margin-bottom: 3rem;
 
   &-white {
-    background-image: linear-gradient(to right, rgba($white,1), rgba($white,1));
+    background-image: linear-gradient(to right, rgba($white,1), lighten(rgba($white,1),10%));
+  }
+  &-orange {
+    background-image: linear-gradient(to right, rgba($color-primary,1), lighten(rgba($color-primary ,1),10%));
+
   }
 }
 

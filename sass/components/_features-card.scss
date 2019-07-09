@@ -1,0 +1,58 @@
+.features-card {
+  padding: 4rem 2rem;
+  width: 70%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba($white-light, 0.85), rgba($white, 0.95));
+  box-shadow: 0 1rem 1rem rgba($black, 0.4);
+  border-radius: 1rem;
+
+
+  .active > *{
+    color: darken($color-primary, 10%);
+    transform: scale(1.05);
+    transition: all 1s;
+  }
+
+  &__tab-header {
+    cursor: pointer;
+    transition: all 500ms;
+    &:hover,
+    &:focus{
+      transform: scale(1.05) translateX(-.5rem);
+    }
+
+
+
+
+  }
+
+  &__content {
+    padding: 3rem;
+    transition: all 0.66s ease-out;
+  }
+
+  &__list {
+    list-style: none;
+    margin: auto;
+    transition: all 500ms;
+
+    &-item {
+      font-size: 2rem;
+      font-weight: 400;
+      color: $color-secondary;
+      margin-top: .5rem;
+
+      &:not(:last-child) {
+        margin-bottom: .5rem;
+      }
+
+      i.icon {
+        color: $color-primary;
+        font-size: 1.5em;
+      }
+
+    }
+  }
+
+
+}
