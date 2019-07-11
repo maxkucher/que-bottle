@@ -1,0 +1,23 @@
+.contacts{
+  color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+  &__phone-number{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+
+  &__location{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &__time{
+    font-size: 2rem;
+    font-weight: 500;
+
+  }
+}

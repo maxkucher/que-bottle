@@ -7,6 +7,13 @@
   box-shadow: 0 1rem 1rem rgba($black, 0.4);
   border-radius: 1rem;
 
+  @include respond(phone){
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+
+
+
 
   .active > *{
     color: darken($color-primary, 10%);
@@ -20,8 +27,14 @@
     &:hover,
     &:focus{
       transform: scale(1.05) translateX(-.5rem);
+      outline: none;
     }
 
+    & .heading-secondary{
+      @include respond(phone){
+        font-size: 3rem;
+      }
+    }
 
 
 

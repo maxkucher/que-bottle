@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Que Bottle</title>
-    <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery.js"></script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="checkout-button">
@@ -27,14 +30,24 @@
     <section class="section-about section-about-1" id="about">
         <h2 class="heading-secondary center-text heading-secondary-white margin-bottom-big">Что такое Que?</h2>
         <div class="row">
-            <p class="paragraph center-text">
+            <!--
+                        <div class="col-1-of-2">
+            -->
+            <p class="paragraph">
                 que Bottle is the only collapsible water bottle that
                 can travel with you and matches your style.
                 Our patented spiral design shrinks the bottle to half of
                 its size without sacrificing the stylish appeal, making it the perfect travel companion.
             </p>
 
-            <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать &rarr;</a>
+            <!--
+                            <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать</a>
+            -->
+            <!-- </div>
+             <div class="col-1-of-2">
+                 <img src="img/bottles.jpg" class="section-about__image" alt="">
+             </div>-->
+
         </div>
 
 
@@ -42,12 +55,21 @@
     <section class="section-about section-about-2">
         <h2 class="heading-secondary  heading-secondary-white center-text margin-bottom-big">Лучшая альтератива</h2>
         <div class="row">
-            <p class="paragraph center-text">
+            <!--
+                        <div class="col-1-of-2">
+            -->
+            <p class="paragraph">
                 Made of 100% food-grade silicone - a material from natural resources such as sand. Better for you and
                 the planet.
-            </p>
+                <!-- </p>
 
-            <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать &rarr;</a>
+ &lt;!&ndash;
+                 <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать</a>
+ &ndash;&gt;
+             </div>
+             <div class="col-1-of-2">
+                 <img src="img/bottle_1.jpg" class="section-about__image" alt="">
+             </div>-->
         </div>
 
 
@@ -68,7 +90,7 @@
                  data-content-pos="features-content">
                 <h2 class="heading-secondary heading-secondary-orange center-text">Характеристики</h2>
             </div>
-            <div class="features-card__content"  id="features-content">
+            <div class="features-card__content" id="features-content">
                 <ul class="features-card__list">
                     <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> BPA-Free & Plastic-Free
                     </li>
@@ -87,7 +109,7 @@
 
     </section>
     <section class="section-gallery">
-        <h2 class="heading-secondary heading-secondary-white center-text margin-bottom-big">Доступные цвета</h2>
+        <h2 class="heading-secondary heading-secondary-orange center-text margin-bottom-big">Доступные цвета</h2>
 
         <div class="row">
             <div class="col-1-of-3">
@@ -176,6 +198,15 @@
             </div>
         </div>
     </section>
+    <section class="section-instagram">
+        <h2 class="heading-secondary heading-secondary-orange center-text margin-top-big">Мы в Instagram</h2>
+        <div class="instargam-container">
+            <iframe src="https://snapwidget.com/embed/712416" class="snapwidget-widget" allowtransparency="true"
+                    frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+            <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right">
+                <a href="https://snapwidget.com/free-widget" style="color:#777;text-decoration:none;">SnapWidget</a></div>
+        </div>
+    </section>
     <section class="section-form">
 
         <div class="row">
@@ -204,6 +235,7 @@
         </div>
     </section>
 
+
 </main>
 <footer class="footer">
     <div class="footer-logo">
@@ -211,10 +243,14 @@
     </div>
     <div class="row">
         <div class="col-1-of-2">
-            Contacts
+            <ion-icon name="logo-whatsapp"></ion-icon>
         </div>
         <div class="col-1-of-2">
-            Developed by
+            <div class="contacts">
+                <h2 class="contacts__phone-number">+38(050) 0000 000</h2>
+                <h3 class="contacts__location">Киев, Украина</h3>
+                <h3 class="contacts__time">Мы работаем с 10:00 до 20:00</h3>
+            </div>
         </div>
     </div>
 </footer>
@@ -236,7 +272,8 @@
 </script>
 <script type="text/html" id="characteristics">
     <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quas, tempore! Ad adipisci architecto aut cumque deserunt excepturi fuga illo praesentium quas repudiandae. Autem dolore doloremque quae qui quia sequi.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quas, tempore! Ad adipisci architecto aut
+        cumque deserunt excepturi fuga illo praesentium quas repudiandae. Autem dolore doloremque quae qui quia sequi.
 
     </p>
 </script>

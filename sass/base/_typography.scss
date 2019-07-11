@@ -3,7 +3,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
 
 }
 
@@ -12,10 +12,7 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 5rem;
-  @include respond(phone) {
-    letter-spacing: 1rem;
-    font-size: 5rem;
-  }
+  display: block;
 
   &-title {
     letter-spacing: .2rem;
@@ -23,6 +20,11 @@ body {
     font-size: 15rem;
     font-weight: 100;
     margin-bottom: 9rem;
+    @include respond(tab-port) {
+      letter-spacing: 1rem;
+      font-size: 10rem;
+      font-weight: 300;
+    }
   }
 
   &-subtitle {
@@ -31,6 +33,12 @@ body {
     font-weight: 100;
     display: block;
     margin-bottom: 3rem;
+    line-height: 2rem;
+    @include respond(tab-port) {
+      letter-spacing: .1rem;
+      font-size: 3rem;
+      line-height: 3rem;
+    }
 
   }
 }
@@ -42,7 +50,7 @@ body {
   font-size: 5rem;
   padding: 1.5rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
   color: transparent;
   background-image: linear-gradient(to right, $color-secondary-light, $color-secondary);
   -webkit-background-clip: text;
@@ -55,14 +63,25 @@ body {
     background-image: linear-gradient(to right, rgba($color-primary,1), lighten(rgba($color-primary ,1),10%));
 
   }
+
+  @include respond(tab-port){
+    line-height: initial;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
 }
 
 .paragraph {
+  text-align: center;
   font-size: 2rem;
   word-spacing: .8rem;
   letter-spacing: .1rem;
   font-weight: 100;
-  background-color: rgba($color-secondary,0.2);
+  background-color: rgba($color-secondary,0.4);
   padding: 3rem 1rem;
   border-radius: .3rem;
+
+  @include respond(phone){
+    text-align: left;
+  }
 }
