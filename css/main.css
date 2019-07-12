@@ -243,12 +243,14 @@ body {
 .section-properties {
   min-height: 110vh;
   padding: 6rem 2rem; }
+  @media (max-width: 37.5em) {
+    .section-properties {
+      min-height: 90vh; } }
 
 .section-form {
   padding: 1rem 0;
   background-image: linear-gradient(#ffff 0, #2EC4B6), url("../img/water.jpg");
   background-size: cover;
-  min-height: 100vh;
   background-position: bottom; }
   @media (max-width: 37.5em) {
     .section-form {
@@ -293,6 +295,23 @@ body {
       .section-instagram .instargam-container {
         padding: 0; } }
 
+.section-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .section-video .video {
+    width: 56vw;
+    height: 31vw;
+    display: block;
+    margin: auto; }
+    @media (max-width: 37.5em) {
+      .section-video .video {
+        margin-bottom: 3rem;
+        width: 100vw;
+        height: 55vw; } }
+
 .btn, .btn:link, .btn:visited {
   text-align: center;
   letter-spacing: .2rem;
@@ -311,8 +330,8 @@ body {
   box-shadow: 0 1rem 1rem rgba(17, 17, 17, 0.2); }
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
-      padding: 1.5rem 4rem;
-      font-size: 1.3rem; } }
+      padding: 1.5rem 3rem;
+      font-size: 1.5rem; } }
 
 .btn:hover {
   transform: translateY(0.3rem);
@@ -467,6 +486,7 @@ body {
     .card__content-price {
       font-size: 4rem;
       font-weight: 300;
+      line-height: 4.5re;
       margin-bottom: 2rem; }
 
 .checkout-button {
@@ -610,6 +630,19 @@ body {
       padding: 8rem 2rem;
       grid-template-columns: 1fr;
       grid-gap: 1rem; } }
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%; }
+    .footer__social .social-link {
+      margin: 0 1rem;
+      display: block; }
+      .footer__social .social-link .social-icon {
+        height: 5rem;
+        width: 5rem; }
   .footer-logo {
     text-align: center;
     margin-bottom: 2rem; }

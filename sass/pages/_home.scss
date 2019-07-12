@@ -43,6 +43,10 @@
   min-height: 110vh;
   padding: 6rem 2rem;
 
+
+  @include respond(phone){
+    min-height: 90vh;
+  }
 }
 
 .section-form {
@@ -50,7 +54,6 @@
   background-image: linear-gradient($white 0, $color-secondary),
   url("../img/water.jpg");
   background-size: cover;
-  min-height: 100vh;
   background-position: bottom;
   @include respond(phone){
     background-repeat: no-repeat;
@@ -114,3 +117,24 @@
   }
 }
 
+
+.section-video{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .video{
+    width: 56vw;
+    height: 31vw;
+    display: block;
+    margin: auto;
+
+    @include respond(phone){
+      margin-bottom: 3rem;
+      width: 100vw;
+      height: 55vw;
+    }
+  }
+
+}
