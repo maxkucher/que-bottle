@@ -41,6 +41,13 @@
     margin-bottom: 3rem !important;
   }
 }
+.margin-bottom-huge {
+  margin-bottom: 10rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
 
 .margin-top-big {
   margin-top: 8rem !important;
@@ -50,7 +57,7 @@
 }
 
 .margin-top-huge {
-  margin-top: 8rem !important;
+  margin-top: 10rem !important;
   @include respond(tab-port) {
     margin-bottom: 5rem !important;
   }

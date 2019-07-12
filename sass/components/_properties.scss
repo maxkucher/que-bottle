@@ -1,0 +1,55 @@
+.properties {
+  display: grid;
+  grid-row-gap: 6rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(phone) {
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__container {
+    padding: 2rem;
+    width: 60%;
+    height: 100%;
+    border-radius: 3rem;
+    margin: auto;
+    color: $color-primary;
+    background-color: white;
+    border: 1px solid $color-primary;
+
+    transition: all 400ms ease-in;
+    &:hover, &:active {
+      background-color: $color-primary;
+      border: 1px solid transparent;
+      color: $white;
+      transform: translateY(.5rem);
+
+    }
+
+  }
+
+  &__property {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 30%;
+
+    &-text {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: currentColor;
+    }
+
+  }
+
+  &__property-icon {
+    width: 6rem;
+    height: 6rem;
+    fill: currentColor;
+  }
+
+
+}

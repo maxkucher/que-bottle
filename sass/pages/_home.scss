@@ -7,7 +7,7 @@
   background-size: cover;
 
   &-1 {
-    background-image: linear-gradient(to right, rgba($white, .5), rgba($color-primary, 0.8)),
+    background-image: linear-gradient(to right, rgba($white-light, .5), rgba($color-primary, 0.8)),
     url("../img/bottle_1.jpg");
     color: $white;
   }
@@ -39,9 +39,15 @@
 
 }
 
+.section-properties{
+  min-height: 110vh;
+  padding: 6rem 2rem;
+
+}
+
 .section-form {
   padding: 15rem 0;
-  background-image: linear-gradient(170deg, rgba($color-primary-light, 0.3) 0, rgba($color-primary, .3)),
+  background-image: linear-gradient($white 0, $color-secondary),
   url("../img/water.jpg");
   background-size: cover;
   background-position: bottom;
@@ -55,35 +61,25 @@
 
 .section-gallery {
   padding: 8rem 1rem;
-  background-image: linear-gradient(to bottom, rgba($color-primary, .2) 60%, rgba($color-primary-light, .4)),
-  url("../img/nature.jpg");
-  background-size: 10%;
+  background-image: linear-gradient(to bottom,$white 10%, $color-secondary , $white);
   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  &__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
 
-  @include respond(phone){
-    background-image: linear-gradient(to bottom, $white, darken($white,10%));
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.section-features{
-  min-height: 130vh;
-  padding: 8rem 1rem;
-  background-image: linear-gradient(to bottom, rgba($color-primary, .5) 60%, rgba($color-primary-light, .7)),
-  url("../img/bottles.jpg");
-  background-size: contain;
-  background-position: center;
-
-  @include respond(phone){
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding: 4rem 1rem;
+    @include respond(phone){
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
+
+
 }
+
 
 .order {
   position: relative;
@@ -92,8 +88,6 @@
   &-form {
     width: 70%;
     margin: auto;
-    box-shadow: 0 2rem 3rem rgba($black,.2);
-    background-color: rgba($black,.4);
     border-radius: 1rem;
     padding: 5rem 2rem;
 
@@ -121,3 +115,4 @@
     }
   }
 }
+

@@ -23,11 +23,11 @@ html {
 }
 
 body {
-  background: linear-gradient(63deg, $color-primary 23%, transparent 23%) 7px 0,
+ /* background: linear-gradient(63deg, $color-primary 23%, transparent 23%) 7px 0,
   linear-gradient(63deg, transparent 74%, $color-primary 78%),
   linear-gradient(63deg, transparent 34%, $color-primary 38%, $color-primary 58%, transparent 62%),
   #444;
-  background-size: 1.6rem 4.8rem;
+  background-size: 1.6rem 4.8rem;*/
   padding: 3rem;
   box-sizing: border-box;
   @include respond(tab-port) {

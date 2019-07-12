@@ -24,13 +24,18 @@
   }
 
   &__content{
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: 1.8rem;
 
     &-header{
       font-size: 4rem;
       font-weight: 200;
       margin-bottom: 3rem;
+
+      @include respond(phone){
+        font-size: 2rem;
+      }
     }
 
     &-price{

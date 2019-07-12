@@ -3,8 +3,8 @@
   border-top-left-radius: 1rem;
   position: relative;
   height: 120vh;
-  background-image: linear-gradient(to right, rgba($color-primary, 0.8) 45%,
-          rgba($color-primary-light, 0.6)),
+  background-image: linear-gradient(to right, rgba($color-primary, 0.8) ,
+          rgba($color-secondary, 0.8)),
   url("../img/header_img.jpg");
   background-size: cover;
   --webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);

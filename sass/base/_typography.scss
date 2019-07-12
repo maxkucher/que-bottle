@@ -43,6 +43,22 @@ body {
   }
 }
 
+.forest-text {
+  padding: 4rem;
+  font-size: 8rem;
+  text-align: center;
+  line-height: 10rem;
+  font-weight: 700;
+  background-image: url("../img/forest.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+
+  @include  respond(phone){
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
 .heading-secondary {
   letter-spacing: .2rem;
   width: 100%;
@@ -57,14 +73,19 @@ body {
   margin-bottom: 3rem;
 
   &-white {
-    background-image: linear-gradient(to right, rgba($white,1), lighten(rgba($white,1),10%));
+    background-image: linear-gradient(to right, $white, $white);
   }
+
   &-orange {
-    background-image: linear-gradient(to right, rgba($color-primary,1), lighten(rgba($color-primary ,1),10%));
+    background-image: linear-gradient(to right, rgba($color-primary, 1), lighten(rgba($color-primary, 1), 10%));
 
   }
 
-  @include respond(tab-port){
+  &-blue {
+    background-image: linear-gradient(to right, $color-secondary, lighten(rgba($color-secondary, 1), 10%));
+  }
+
+  @include respond(tab-port) {
     line-height: initial;
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -77,11 +98,11 @@ body {
   word-spacing: .8rem;
   letter-spacing: .1rem;
   font-weight: 100;
-  background-color: rgba($color-secondary,0.4);
+  background-color: rgba($color-secondary, 0.4);
   padding: 3rem 1rem;
   border-radius: .3rem;
 
-  @include respond(phone){
+  @include respond(phone) {
     text-align: left;
   }
 }
