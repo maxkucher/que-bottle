@@ -1,12 +1,21 @@
 .footer {
-  padding: 10rem 0;
+  padding: 5rem 0;
   font-size: 1.3rem;
   background-image: linear-gradient(to bottom, $color-secondary 20%, $white);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1.5fr 1fr;
+
   @include respond(tab-port) {
-    padding: 8rem 0;
+    padding: 8rem 2rem;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
+
+
 
   &-logo {
     text-align: center;

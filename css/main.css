@@ -109,25 +109,27 @@ body {
         line-height: 3rem; } }
 
 .forest-text {
-  padding: 4rem;
-  font-size: 8rem;
+  padding: 20rem 2rem;
+  font-size: 3.5rem;
   text-align: center;
-  line-height: 10rem;
-  font-weight: 700;
-  background-image: url("../img/forest.jpg");
-  color: transparent;
-  -webkit-background-clip: text; }
+  line-height: 5rem;
+  font-weight: 300;
+  background-image: linear-gradient(to bottom, white 5%, rgba(0, 0, 0, 0) 50%, white 95%), url("../img/forest.jpg");
+  color: white; }
   @media (max-width: 37.5em) {
     .forest-text {
-      font-size: 4rem;
-      line-height: 5rem; } }
+      font-size: 2rem;
+      line-height: 3rem; } }
+  .forest-text__bold {
+    font-weight: 700;
+    line-height: 10rem; }
 
 .heading-secondary {
+  padding: 5rem 2rem;
   letter-spacing: .2rem;
   width: 100%;
   display: inline-block;
   font-size: 5rem;
-  padding: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
   color: transparent;
@@ -145,6 +147,9 @@ body {
       line-height: initial;
       margin-bottom: 2rem;
       font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      padding: 2rem 0; } }
 
 .paragraph {
   text-align: center;
@@ -240,20 +245,19 @@ body {
   padding: 6rem 2rem; }
 
 .section-form {
-  padding: 15rem 0;
+  padding: 1rem 0;
   background-image: linear-gradient(#ffff 0, #2EC4B6), url("../img/water.jpg");
   background-size: cover;
+  min-height: 100vh;
   background-position: bottom; }
   @media (max-width: 37.5em) {
     .section-form {
       background-repeat: no-repeat;
       background-size: cover;
-      height: 100vh;
       padding: 4rem 1rem; } }
 
 .section-gallery {
   padding: 8rem 1rem;
-  background-image: linear-gradient(to bottom, #ffff 10%, #2EC4B6, #ffff);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -266,8 +270,7 @@ body {
         grid-template-columns: 1fr 1fr; } }
 
 .order {
-  position: relative;
-  height: 95vh; }
+  position: relative; }
   .order-form {
     width: 70%;
     margin: auto;
@@ -280,7 +283,7 @@ body {
 
 .section-instagram {
   background-color: #ffff;
-  padding: 3rem 1rem; }
+  padding: 1rem; }
   @media (max-width: 37.5em) {
     .section-instagram {
       padding: 1rem; } }
@@ -360,7 +363,7 @@ body {
     font-size: 1.8rem;
     font-family: inherit;
     padding: 1.5rem 2rem;
-    border-radius: 2px;
+    border-radius: 2rem;
     background-color: #ffff;
     border: none;
     width: 100%;
@@ -501,14 +504,18 @@ body {
       color: #ffff; }
 
 .contacts {
-  color: #2EC4B6;
+  color: #ffff;
   display: flex;
+  text-align: center;
   flex-direction: column; }
   .contacts__phone-number {
     margin-bottom: 2rem;
     font-size: 4rem;
     letter-spacing: 1px;
     font-weight: 100; }
+    @media (max-width: 37.5em) {
+      .contacts__phone-number {
+        font-size: 3rem; } }
   .contacts__location {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -516,6 +523,9 @@ body {
   .contacts__time {
     font-size: 2rem;
     font-weight: 500; }
+    @media (max-width: 37.5em) {
+      .contacts__time {
+        line-height: 2.3rem; } }
 
 .properties {
   display: grid;
@@ -586,14 +596,20 @@ body {
       text-align: center; } }
 
 .footer {
-  padding: 10rem 0;
+  padding: 5rem 0;
   font-size: 1.3rem;
   background-image: linear-gradient(to bottom, #2EC4B6 20%, #ffff);
   border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem; }
+  border-bottom-right-radius: 1rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1.5fr 1fr; }
   @media (max-width: 56.25em) {
     .footer {
-      padding: 8rem 0; } }
+      padding: 8rem 2rem;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem; } }
   .footer-logo {
     text-align: center;
     margin-bottom: 2rem; }
@@ -646,7 +662,7 @@ body {
   border-top-left-radius: 1rem;
   position: relative;
   height: 120vh;
-  background-image: linear-gradient(to right, rgba(255, 159, 28, 0.8), rgba(46, 196, 182, 0.8)), url("../img/header_img.jpg");
+  background-image: linear-gradient(to right, rgba(255, 159, 28, 0.3), rgba(46, 196, 182, 0.3)), url("../img/bottle_2.jpg");
   background-size: cover;
   --webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }

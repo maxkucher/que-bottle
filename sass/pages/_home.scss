@@ -46,22 +46,21 @@
 }
 
 .section-form {
-  padding: 15rem 0;
+  padding: 1rem 0;
   background-image: linear-gradient($white 0, $color-secondary),
   url("../img/water.jpg");
   background-size: cover;
+  min-height: 100vh;
   background-position: bottom;
   @include respond(phone){
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     padding: 4rem 1rem;
   }
 }
 
 .section-gallery {
   padding: 8rem 1rem;
-  background-image: linear-gradient(to bottom,$white 10%, $color-secondary , $white);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +82,6 @@
 
 .order {
   position: relative;
-  height: 95vh;
 
   &-form {
     width: 70%;
@@ -102,7 +100,7 @@
 
 .section-instagram{
   background-color: $white;
-  padding: 3rem 1rem;
+  padding: 1rem;
 
   @include respond(phone){
     padding: 1rem;
