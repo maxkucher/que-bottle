@@ -1,0 +1,32 @@
+.contacts{
+  color: $white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  &__phone-number{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+
+    @include respond(phone){
+      font-size: 3rem;
+    }
+  }
+
+  &__location{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &__time{
+    font-size: 2rem;
+    font-weight: 500;
+
+    @include respond(phone){
+      line-height: 2.3rem;
+    }
+
+  }
+}

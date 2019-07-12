@@ -1,27 +1,27 @@
-document.addEventListener("DOMContentLoaded", () => {
+$(document).ready(() => {
+    $('#submit-order-form').on('submit', function (e) {
+        e.preventDefault();
 
-    document.querySelectorAll('.tab-control')
-        .forEach((el) => {
-            el.addEventListener('click', () => {
-                const dataId = el.getAttribute('data-id');
-                const contentPosition = el.getAttribute('data-content-pos');
-                const dataGroup = el.getAttribute('data-group');
-                document.querySelector(`#${contentPosition}`)
-                    .innerHTML = getElementContentById(dataId);
-                document.querySelectorAll(`[data-group="${dataGroup}"]`)
-                    .forEach((el1) => {
-                        el1.classList.remove('active');
-                    });
-                el.classList.add('active');
+        const name = $('#name').val();
+        const phoneNumber = $('#phone').val();
 
 
-            })
+        $.ajax({
+            url: 'http://localhost:8080/orders',
+            type: 'post',
+            data: JSON.stringify({name, phoneNumber}),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            dataType: 'json',
+            success(data) {
+                console.log(JSON.stringify(data));
+            },
+            error(error) {
+                console.log(error);
+            }
         });
 
+    })
 });
-
-const getElementContentById = (id) => {
-    return document.querySelector(`#${id}`)
-        .innerHTML;
-};
-

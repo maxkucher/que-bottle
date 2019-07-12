@@ -2,12 +2,12 @@
   width: 90%;
   margin: auto;
 
+
   &-heading{
     font-size: 1.6rem;
     margin-bottom: 2rem;
     text-align: center;
     color: $white;
-    background-color: rgba($black,.2);
     padding: 1rem 3rem;
   }
 
@@ -19,7 +19,7 @@
     font-size: 1.8rem;
     font-family: inherit;
     padding: 1.5rem 2rem;
-    border-radius: 2px;
+    border-radius: 2rem;
     background-color: $white;
     border: none;
     width: 100%;

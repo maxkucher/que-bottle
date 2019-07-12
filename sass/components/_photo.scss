@@ -1,5 +1,11 @@
 .photo {
-  max-width: 60%;
-  border-radius: 2px;
+  max-width: 90%;
+  border-radius: 5rem;
   margin: auto;
+  transition: all 400ms ease-in;
+
+
+  &:hover, &:active{
+    transform: translateY(0.5rem) scale(1.05);
+  }
 }

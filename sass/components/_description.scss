@@ -1,0 +1,44 @@
+.description {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  align-items: center;
+
+  &-image-text{
+    flex-direction: row-reverse;
+  }
+  &__content {
+    flex: 0 0 60%;
+    font-size: 3rem;
+    padding: 3.5rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    line-height: 3rem;
+
+    &-color-secondary{
+      color: $color-secondary;
+    }
+
+    &-color-primary{
+        color: $color-primary;
+    }
+
+
+  }
+
+  &__image {
+    flex: 1;
+  }
+
+  .image {
+    width: 90%;
+    height: auto;
+  }
+
+  @include respond(phone){
+    margin-top: 3rem;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+}

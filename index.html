@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Que Bottle</title>
-    <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery.js"></script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="checkout-button">
-    <a href="#" class="checkout-button__link"><i class="icon ion-md-card"></i></a>
+    <a href="#" class="checkout-button__link">
+        <svg class="checkout-button__icon">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+        </svg>
+    </a>
 </div>
 
 <header class="header">
@@ -24,199 +31,371 @@
     </div>
 </header>
 <main>
-    <section class="section-about section-about-1" id="about">
-        <h2 class="heading-secondary center-text heading-secondary-white margin-bottom-big">Что такое Que?</h2>
-        <div class="row">
-            <p class="paragraph center-text">
-                que Bottle is the only collapsible water bottle that
-                can travel with you and matches your style.
-                Our patented spiral design shrinks the bottle to half of
-                its size without sacrificing the stylish appeal, making it the perfect travel companion.
+    <!--    <section class="section-about section-about-1" id="about">
+            <h2 class="heading-secondary center-text heading-secondary-white margin-bottom-big">Что такое Que?</h2>
+            <div class="row">
+                &lt;!&ndash;
+                            <div class="col-1-of-2">
+                &ndash;&gt;
+                <p class="paragraph">
+                    que Bottle is the only collapsible water bottle that
+                    can travel with you and matches your style.
+                    Our patented spiral design shrinks the bottle to half of
+                    its size without sacrificing the stylish appeal, making it the perfect travel companion.
+                </p>
+
+                &lt;!&ndash;
+                                <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать</a>
+                &ndash;&gt;
+                &lt;!&ndash; </div>
+                 <div class="col-1-of-2">
+                     <img src="img/bottles.jpg" class="section-about__image" alt="">
+                 </div>&ndash;&gt;
+
+            </div>
+
+
+        </section>
+        <section class="section-about section-about-2">
+            <h2 class="heading-secondary  heading-secondary-white center-text margin-bottom-big">Лучшая альтератива</h2>
+            <div class="row">
+                &lt;!&ndash;
+                            <div class="col-1-of-2">
+                &ndash;&gt;
+                <p class="paragraph">
+                    Made of 100% food-grade silicone - a material from natural resources such as sand. Better for you and
+                    the planet.
+                    &lt;!&ndash; </p>
+
+     &lt;!&ndash;
+                     <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать</a>
+     &ndash;&gt;
+                 </div>
+                 <div class="col-1-of-2">
+                     <img src="img/bottle_1.jpg" class="section-about__image" alt="">
+                 </div>&ndash;&gt;
+            </div>
+
+
+        </section>-->
+    <!--
+        <section class="section-features">
+
+            <div class="features-card">
+
+                <div class="features-card__tab-header tab-control active"
+                     data-group="bottle-props"
+                     data-id="features"
+                     data-content-pos="features-content">
+                    <h2 class="heading-secondary heading-secondary-orange center-text ">Свойства</h2>
+                </div>
+                <div class="features-card__tab-header tab-control"
+                     data-group="bottle-props"
+                     data-id="characteristics"
+                     data-content-pos="features-content">
+                    <h2 class="heading-secondary heading-secondary-orange center-text">Характеристики</h2>
+                </div>
+                <div class="features-card__content" id="features-content">
+                    <ul class="features-card__list">
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> BPA-Free & Plastic-Free
+                        </li>
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> food-grade silicone</li>
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Dishwasher safe</li>
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Taste & Odor free</li>
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Lightweight & compact
+                        </li>
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Leakproof</li>
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Shockproof</li>
+                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Wide mouth for ice cubes
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    -->
+    <section class="section-description">
+
+        <div class="description">
+            <p class="description__content description__content-color-primary">
+                que Bottle - единственный бутыль который умеет изменять свой размер под Ваши нужды.
+                Благодаря спиралям бутыль может увеличивать свой обьём в два раза. que Bottle может стать
+                незаменимым спутником во свех Ваших путешествиях.
             </p>
-
-            <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать &rarr;</a>
+            <div class="description__image">
+                <img src="img/bottle_1.jpg" class="photo" alt="">
+            </div>
         </div>
 
-
     </section>
-    <section class="section-about section-about-2">
-        <h2 class="heading-secondary  heading-secondary-white center-text margin-bottom-big">Лучшая альтератива</h2>
-        <div class="row">
-            <p class="paragraph center-text">
-                Made of 100% food-grade silicone - a material from natural resources such as sand. Better for you and
-                the planet.
+
+    <section class="section-description">
+
+        <div class="description description-image-text">
+            <p class="description__content description__content-color-secondary">
+
+                Сделано из 100% пищевого силикона - натурального материала. Хорошо и Вам - и природе.
             </p>
-
-            <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать &rarr;</a>
-        </div>
-
-
-    </section>
-    <section class="section-features">
-
-        <div class="features-card">
-
-            <div class="features-card__tab-header tab-control active"
-                 data-group="bottle-props"
-                 data-id="features"
-                 data-content-pos="features-content">
-                <h2 class="heading-secondary heading-secondary-orange center-text ">Свойства</h2>
-            </div>
-            <div class="features-card__tab-header tab-control"
-                 data-group="bottle-props"
-                 data-id="characteristics"
-                 data-content-pos="features-content">
-                <h2 class="heading-secondary heading-secondary-orange center-text">Характеристики</h2>
-            </div>
-            <div class="features-card__content"  id="features-content">
-                <ul class="features-card__list">
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> BPA-Free & Plastic-Free
-                    </li>
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> food-grade silicone</li>
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Dishwasher safe</li>
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Taste & Odor free</li>
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Lightweight & compact
-                    </li>
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Leakproof</li>
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Shockproof</li>
-                    <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Wide mouth for ice cubes
-                    </li>
-                </ul>
+            <div class="description__image">
+                <img src="img/bottles.jpg" class="photo" alt="">
             </div>
         </div>
 
     </section>
-    <section class="section-gallery">
-        <h2 class="heading-secondary heading-secondary-white center-text margin-bottom-big">Доступные цвета</h2>
 
-        <div class="row">
-            <div class="col-1-of-3">
-                <div class="card">
-                    <div class="card__header">
-                        <img src="img/bottles/bonfire-red.gif" class="card__img" alt="bottle image">
+
+    <section class="section-characteristics">
+
+    </section>
+
+    <section class="section-properties">
+        <h2 class="heading-secondary heading-secondary-orange center-text margin-bottom-big">Почему мы лучшие?</h2>
+        <div class="properties">
+            <div class="properties__container">
+                <div class="properties__property">
+                    <svg class="properties__property-icon">
+                        <use xlink:href="img/sprite.svg#icon-recycle"></use>
+                    </svg>
+                    <div class="properties__property-text">
+                        Без BPA и Пластика
                     </div>
+                </div>
+            </div>
+            <div class="properties__container">
+                <div class="properties__property">
+                    <svg class="properties__property-icon">
+                        <use xlink:href="img/sprite.svg#icon-lightbulb"></use>
+                    </svg>
+                    <div class="properties__property-text">
+                        Только пищевой силикон
+                    </div>
+                </div>
+            </div>
+            <div class="properties__container">
+                <div class="properties__property">
+                    <svg class="properties__property-icon">
+                        <use xlink:href="img/sprite.svg#icon-speedometer"></use>
+                    </svg>
+                    <div class="properties__property-text">
+                        Можно мыть в посудомоечной машине
+                    </div>
+                </div>
+            </div>
+            <div class="properties__container">
+                <div class="properties__property">
+                    <svg class="properties__property-icon">
+                        <use xlink:href="img/sprite.svg#icon-happy"></use>
+                    </svg>
+                    <div class="properties__property-text">
+                        Не протекает
+                    </div>
+                </div>
+            </div>
+            <div class="properties__container">
+                <div class="properties__property">
+                    <svg class="properties__property-icon">
+                        <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <div class="properties__property-text">
+                        Не бьётся
+                    </div>
+                </div>
+            </div>
+            <div class="properties__container">
+                <div class="properties__property">
+                    <svg class="properties__property-icon">
+                        <use xlink:href="img/sprite.svg#icon-cloud"></use>
+                    </svg>
+                    <div class="properties__property-text">
+                        Очень лёгкая
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <div class="section-video">
+        <iframe  class="video"  src="https://www.youtube.com/embed/LD6f3TylWFg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <button class="btn btn-dark">Заказать</button>
+    </div>
+    <div class="section-description">
+        <div class="forest-text">
+            <span class="forest-text__bold">1 бутылка = 1 акр леса </span>
+            <br/>
+            10% наших доходов идёт в фонд Rainforest Trut для защиты тропических лесов
+
+        </div>
+    </div>
+
+
+    <section class="section-gallery">
+        <h2 class="heading-secondary heading-secondary-blue center-text">Доступные цвета</h2>
+        <div class="section-gallery__container">
+
+            <!--<div class="row">
+                <div class="col-1-of-3">-->
+            <div class="card">
+                <div class="card__header">
+                    <img src="img/bottles/bonfire-red.gif" class="card__img" alt="bottle image">
+                </div>
+                <div class="card__content">
+                    <h5 class="card__content-header">Bonfire Red</h5>
+                    <p class="card__content-price">250 UAH</p>
+                    <button class="btn btn-dark">Заказать</button>
+                </div>
+            </div>
+            <!--  </div>
+              <div class="col-1-of-3">-->
+            <div class="card">
+                <div class="card__header">
+                    <img src="img/bottles/midnight-bllue.gif" class="card__img" alt="bottle image">
+                </div>
+                <div class="card__content">
                     <div class="card__content">
-                        <h5 class="card__content-header">Bonfire Red</h5>
+                        <h5 class="card__content-header">Midnight Blue</h5>
                         <p class="card__content-price">250 UAH</p>
                         <button class="btn btn-dark">Заказать</button>
                     </div>
                 </div>
             </div>
-            <div class="col-1-of-3">
-                <div class="card">
-                    <div class="card__header">
-                        <img src="img/bottles/midnight-bllue.gif" class="card__img" alt="bottle image">
-                    </div>
+            <!-- </div>
+             <div class="col-1-of-3">-->
+            <div class="card">
+                <div class="card__header">
+                    <img src="img/bottles/cirus-yellow.gif" class="card__img" alt="bottle image">
+                </div>
+                <div class="card__content">
                     <div class="card__content">
-                        <div class="card__content">
-                            <h5 class="card__content-header">Midnight Blue</h5>
-                            <p class="card__content-price">250 UAH</p>
-                            <button class="btn btn-dark">Заказать</button>
-                        </div>
+                        <h5 class="card__content-header">Citrus Yellow</h5>
+                        <p class="card__content-price">250 UAH</p>
+                        <button class="btn btn-dark">Заказать</button>
                     </div>
                 </div>
             </div>
-            <div class="col-1-of-3">
-                <div class="card">
-                    <div class="card__header">
-                        <img src="img/bottles/cirus-yellow.gif" class="card__img" alt="bottle image">
-                    </div>
+            <!--     </div>
+             </div>
+             <div class="row">
+                 <div class="col-1-of-3">-->
+            <div class="card">
+                <div class="card__header">
+                    <img src="img/bottles/coral-pink.gif" class="card__img" alt="bottle image">
+                </div>
+                <div class="card__content">
                     <div class="card__content">
-                        <div class="card__content">
-                            <h5 class="card__content-header">Citrus Yellow</h5>
-                            <p class="card__content-price">250 UAH</p>
-                            <button class="btn btn-dark">Заказать</button>
-                        </div>
+                        <h5 class="card__content-header">Coral Pink</h5>
+                        <p class="card__content-price">250 UAH</p>
+                        <button class="btn btn-dark">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <!--  </div>
+              <div class="col-1-of-3">-->
+            <div class="card">
+                <div class="card__header">
+                    <img src="img/bottles/orange.gif" class="card__img" alt="bottle image">
+                </div>
+                <div class="card__content">
+                    <div class="card__content">
+                        <h5 class="card__content-header">Orange</h5>
+                        <p class="card__content-price">250 UAH</p>
+                        <button class="btn btn-dark">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <!--     </div>
+                 <div class="col-1-of-3">-->
+            <div class="card">
+                <div class="card__header">
+                    <img src="img/bottles/missty-min.gif" class="card__img" alt="bottle image">
+                </div>
+                <div class="card__content">
+                    <div class="card__content">
+                        <h5 class="card__content-header">Misty</h5>
+                        <p class="card__content-price">250 UAH</p>
+                        <button class="btn btn-dark">Заказать</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-1-of-3">
-                <div class="card">
-                    <div class="card__header">
-                        <img src="img/bottles/coral-pink.gif" class="card__img" alt="bottle image">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__content">
-                            <h5 class="card__content-header">Coral Pink</h5>
-                            <p class="card__content-price">250 UAH</p>
-                            <button class="btn btn-dark">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-of-3">
-                <div class="card">
-                    <div class="card__header">
-                        <img src="img/bottles/orange.gif" class="card__img" alt="bottle image">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__content">
-                            <h5 class="card__content-header">Orange</h5>
-                            <p class="card__content-price">250 UAH</p>
-                            <button class="btn btn-dark">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-of-3">
-                <div class="card">
-                    <div class="card__header">
-                        <img src="img/bottles/missty-min.gif" class="card__img" alt="bottle image">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__content">
-                            <h5 class="card__content-header">Misty</h5>
-                            <p class="card__content-price">250 UAH</p>
-                            <button class="btn btn-dark">Заказать</button>
-                        </div>
-                    </div>
-                </div>
+        <!--      </div>
+          </div>-->
+    </section>
+    <section class="section-instagram">
+        <h2 class="heading-secondary heading-secondary-orange center-text">Мы в Instagram</h2>
+        <div class="instargam-container">
+            <iframe src="https://snapwidget.com/embed/712416" class="snapwidget-widget" allowtransparency="true"
+                    frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+            <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right">
+                <a href="https://snapwidget.com/free-widget" style="color:#777;text-decoration:none;">SnapWidget</a>
             </div>
         </div>
     </section>
     <section class="section-form">
 
-        <div class="row">
-            <div class="order">
-                <div class="order-form">
-                    <form action="#" class="form">
-                        <h2 class="heading-secondary heading-secondary-white center-text margin-bottom-big">Оставить
-                            заявку</h2>
-                        <div class="form-heading">
-                            <i>Мы свяжемся с Вами в течении 5 минут</i>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-input" type="text" name="name" placeholder="Имя" id="name"
-                                   required>
-                            <label class="form-label" for="name">Имя</label>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-input" type="text" name="name" placeholder="Номер телефона"
-                                   id="phone" required>
-                            <label class="form-label" for="phone">Номер телефона</label>
-                        </div>
-                        <button class="btn btn-white">Отправить заявку</button>
-                    </form>
-                </div>
+        <div class="order">
+            <div class="order-form">
+                <form action="#" id="submit-order-form" class="form">
+                    <h2 class="heading-secondary heading-secondary-blue center-text">Оставить
+                        заявку</h2>
+                    <div class="form-heading">
+                        Мы свяжемся с Вами в течении 5 минут
+                    </div>
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="name" placeholder="Имя" id="name"
+                               required>
+                        <label class="form-label" for="name">Имя</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="phoneNumber" placeholder="Номер телефона"
+                               id="phone" required>
+                        <label class="form-label" for="phone">Номер телефона</label>
+                    </div>
+                    <button class="btn btn-white">Отправить заявку</button>
+                </form>
             </div>
         </div>
     </section>
 
+
 </main>
+
 <footer class="footer">
-    <div class="footer-logo">
-        <img class="footer-logo-img" src="img/logo.png" alt="Logo"/>
-    </div>
-    <div class="row">
-        <div class="col-1-of-2">
-            Contacts
+        <div class="footer__main">
+            <div class="contacts">
+                <h2 class="contacts__phone-number">+38(050) 0000 000</h2>
+                <h3 class="contacts__location">Киев, Украина</h3>
+                <h3 class="contacts__time">Мы работаем с 10:00 до 20:00</h3>
+            </div>
+            <div class="footer-logo">
+                <img class="footer-logo-img" src="img/logo.png" alt="Logo"/>
+            </div>
         </div>
-        <div class="col-1-of-2">
-            Developed by
-        </div>
+    <div class="footer__social">
+        <a href="#" class="social-link">
+            <svg  class="social-icon" >
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
+        </a>
+        <a href="#" class="social-link">
+            <svg  class="social-icon" >
+                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+            </svg>
+        </a>
+        <a href="#" class="social-link">
+            <svg  class="social-icon" >
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+        </a>
+        <a href="#" class="social-link">
+        <svg  class="social-icon" >
+            <use xlink:href="img/sprite.svg#icon-viber"></use>
+        </svg>
+        </a>
     </div>
+
 </footer>
 
 <script type="text/html" id="features">
@@ -236,7 +415,8 @@
 </script>
 <script type="text/html" id="characteristics">
     <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quas, tempore! Ad adipisci architecto aut cumque deserunt excepturi fuga illo praesentium quas repudiandae. Autem dolore doloremque quae qui quia sequi.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quas, tempore! Ad adipisci architecto aut
+        cumque deserunt excepturi fuga illo praesentium quas repudiandae. Autem dolore doloremque quae qui quia sequi.
 
     </p>
 </script>
