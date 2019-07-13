@@ -12,7 +12,18 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="checkout-button">
+
+<div class="modal">
+    <div class="modal__header">
+
+    </div>
+    <div class="model__content">
+
+    </div>
+</div>
+
+
+<div class="checkout-button navigate-to-order-form">
     <a href="#" class="checkout-button__link">
         <svg class="checkout-button__icon">
             <use xlink:href="img/sprite.svg#icon-basket"></use>
@@ -26,94 +37,11 @@
         <h1 class="heading-prime">
             <span class="heading-prime-title animation animation-left">Que</span>
             <span class="heading-prime-subtitle animation animation-right">Возьмите это с собой</span>
-            <a href="#about" class="btn btn-white animation animation-bottom navigate-to-about">Подробнее</a>
+            <a href="#about" class="btn btn-white animation animation-bottom navigate-to-about navigate-to-gallery">Подробнее</a>
         </h1>
     </div>
 </header>
 <main>
-    <!--    <section class="section-about section-about-1" id="about">
-            <h2 class="heading-secondary center-text heading-secondary-white margin-bottom-big">Что такое Que?</h2>
-            <div class="row">
-                &lt;!&ndash;
-                            <div class="col-1-of-2">
-                &ndash;&gt;
-                <p class="paragraph">
-                    que Bottle is the only collapsible water bottle that
-                    can travel with you and matches your style.
-                    Our patented spiral design shrinks the bottle to half of
-                    its size without sacrificing the stylish appeal, making it the perfect travel companion.
-                </p>
-
-                &lt;!&ndash;
-                                <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать</a>
-                &ndash;&gt;
-                &lt;!&ndash; </div>
-                 <div class="col-1-of-2">
-                     <img src="img/bottles.jpg" class="section-about__image" alt="">
-                 </div>&ndash;&gt;
-
-            </div>
-
-
-        </section>
-        <section class="section-about section-about-2">
-            <h2 class="heading-secondary  heading-secondary-white center-text margin-bottom-big">Лучшая альтератива</h2>
-            <div class="row">
-                &lt;!&ndash;
-                            <div class="col-1-of-2">
-                &ndash;&gt;
-                <p class="paragraph">
-                    Made of 100% food-grade silicone - a material from natural resources such as sand. Better for you and
-                    the planet.
-                    &lt;!&ndash; </p>
-
-     &lt;!&ndash;
-                     <a href="#" class="btn btn-dark margin-top-huge center-text">Заказать</a>
-     &ndash;&gt;
-                 </div>
-                 <div class="col-1-of-2">
-                     <img src="img/bottle_1.jpg" class="section-about__image" alt="">
-                 </div>&ndash;&gt;
-            </div>
-
-
-        </section>-->
-    <!--
-        <section class="section-features">
-
-            <div class="features-card">
-
-                <div class="features-card__tab-header tab-control active"
-                     data-group="bottle-props"
-                     data-id="features"
-                     data-content-pos="features-content">
-                    <h2 class="heading-secondary heading-secondary-orange center-text ">Свойства</h2>
-                </div>
-                <div class="features-card__tab-header tab-control"
-                     data-group="bottle-props"
-                     data-id="characteristics"
-                     data-content-pos="features-content">
-                    <h2 class="heading-secondary heading-secondary-orange center-text">Характеристики</h2>
-                </div>
-                <div class="features-card__content" id="features-content">
-                    <ul class="features-card__list">
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> BPA-Free & Plastic-Free
-                        </li>
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> food-grade silicone</li>
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Dishwasher safe</li>
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Taste & Odor free</li>
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Lightweight & compact
-                        </li>
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Leakproof</li>
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Shockproof</li>
-                        <li class="features-card__list-item"><i class="icon ion-md-checkmark"></i> Wide mouth for ice cubes
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-    -->
     <section class="section-description">
 
         <div class="description">
@@ -219,7 +147,7 @@
         <iframe  class="video"  src="https://www.youtube.com/embed/LD6f3TylWFg" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-        <button class="btn btn-dark">Заказать</button>
+        <button class="btn btn-dark navigate-to-gallery">Заказать</button>
     </div>
     <div class="section-description">
         <div class="forest-text">
@@ -234,9 +162,6 @@
     <section class="section-gallery">
         <h2 class="heading-secondary heading-secondary-blue center-text">Доступные цвета</h2>
         <div class="section-gallery__container">
-
-            <!--<div class="row">
-                <div class="col-1-of-3">-->
             <div class="card">
                 <div class="card__header">
                     <img src="img/bottles/bonfire-red.gif" class="card__img" alt="bottle image">
@@ -244,11 +169,9 @@
                 <div class="card__content">
                     <h5 class="card__content-header">Bonfire Red</h5>
                     <p class="card__content-price">250 UAH</p>
-                    <button class="btn btn-dark">Заказать</button>
+                    <button class="btn btn-dark navigate-to-order-form">Заказать</button>
                 </div>
             </div>
-            <!--  </div>
-              <div class="col-1-of-3">-->
             <div class="card">
                 <div class="card__header">
                     <img src="img/bottles/midnight-bllue.gif" class="card__img" alt="bottle image">
@@ -257,12 +180,10 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Midnight Blue</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
                     </div>
                 </div>
             </div>
-            <!-- </div>
-             <div class="col-1-of-3">-->
             <div class="card">
                 <div class="card__header">
                     <img src="img/bottles/cirus-yellow.gif" class="card__img" alt="bottle image">
@@ -271,14 +192,10 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Citrus Yellow</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
                     </div>
                 </div>
             </div>
-            <!--     </div>
-             </div>
-             <div class="row">
-                 <div class="col-1-of-3">-->
             <div class="card">
                 <div class="card__header">
                     <img src="img/bottles/coral-pink.gif" class="card__img" alt="bottle image">
@@ -287,12 +204,10 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Coral Pink</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
                     </div>
                 </div>
             </div>
-            <!--  </div>
-              <div class="col-1-of-3">-->
             <div class="card">
                 <div class="card__header">
                     <img src="img/bottles/orange.gif" class="card__img" alt="bottle image">
@@ -301,12 +216,10 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Orange</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
                     </div>
                 </div>
             </div>
-            <!--     </div>
-                 <div class="col-1-of-3">-->
             <div class="card">
                 <div class="card__header">
                     <img src="img/bottles/missty-min.gif" class="card__img" alt="bottle image">
@@ -315,13 +228,11 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Misty</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!--      </div>
-          </div>-->
     </section>
     <section class="section-instagram">
         <h2 class="heading-secondary heading-secondary-orange center-text">Мы в Instagram</h2>

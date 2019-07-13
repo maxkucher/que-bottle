@@ -1,5 +1,24 @@
 $(document).ready(() => {
-    $('#submit-order-form').on('submit', function (e) {
+
+        $('.navigate-to-order-form').on('click', function(e)  {
+        $('html,body').animate({
+            scrollTop: $('#submit-order-form')
+                .offset()
+                .top
+        }, 'slow')
+    });
+
+
+    $('.navigate-to-gallery').on('click', function (e) {
+        $('html,body').animate({
+            scrollTop: $('.section-gallery')
+                .offset()
+                .top
+        }, 'slow')
+    });
+
+
+    $('#submit-order-form').on('submit', function(e) {
         e.preventDefault();
 
         const name = $('#name').val();
