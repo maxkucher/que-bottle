@@ -2,12 +2,12 @@
 /*  border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;*/
   position: relative;
-  height: 120vh;
+  height: 100vh;
   background-image: $main-gradient,
   url("../img/bottle_2.jpg");
   background-size: cover;
-  --webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  --webkit-clip-path: polygon(0 0, 100% 0, 100%  75%, 50% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100%  75%, 50% 100%, 0 100%);
   @include respond(tab-port) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     --webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

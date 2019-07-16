@@ -7,7 +7,7 @@
     font-size: 1.6rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: currentColor;
+    color: $color-secondary;
     padding: 1rem 3rem;
   }
 
@@ -25,7 +25,7 @@
     width: 100%;
     display: block;
     margin: 0 auto;
-    transition: all .3s;
+    transition: all .3s cubic-bezier(0,-0.1,0,1.06) ;
     border: .1rem solid $color-secondary;
 
     &:focus:invalid {
@@ -37,6 +37,7 @@
     }
 
     &:focus {
+      transform: scaleX(1.05);
       outline: none;
       box-shadow: 0 1rem 1rem rgba($black, .2);
       /*

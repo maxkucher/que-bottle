@@ -3,6 +3,7 @@
   &,
   &:link,
   &:visited {
+    opacity: 0.85;
     text-align: center;
     letter-spacing: .2rem;
     font-weight: 100;
@@ -13,9 +14,9 @@
     cursor: pointer;
     display: inline-block;
     padding: 2rem 5rem;
-    transition: all .2s;
+    transition: all .2s cubic-bezier(1,.01,0,.69);
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     margin: 2rem 0;
     box-shadow: 0 1rem 1rem rgba($black, 0.2);
 

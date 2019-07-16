@@ -223,9 +223,9 @@ body {
       margin-bottom: 5rem !important; } }
 
 .section-about {
-  margin: -20rem 0;
+  margin: -20rem 5rem;
   min-height: 130vh;
-  padding: 25rem 0 25rem 0;
+  padding: 25rem 10rem 25rem 10rem;
   --webkit-clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
   background-size: cover; }
@@ -261,12 +261,9 @@ body {
   padding: 1rem 0;
   /*  background-image: linear-gradient($white 0, $color-secondary),
   url("../img/water.jpg");*/
-  background-size: cover;
-  background-position: bottom; }
+  background-image: url("../img/bmob.gif"); }
   @media (max-width: 37.5em) {
     .section-form {
-      background-repeat: no-repeat;
-      background-size: cover;
       padding: 4rem 1rem; } }
 
 .section-gallery {
@@ -299,7 +296,7 @@ body {
 
 .bottom-panel {
   min-width: 100vw;
-  min-height: 5rem;
+  min-height: 10vh;
   background-image: radial-gradient(circle farthest-corner at 0% 1rem, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent); }
 
 .section-instagram {
@@ -331,7 +328,13 @@ body {
         width: 100vw;
         height: 55vw; } }
 
+.bmob-image {
+  display: block;
+  margin: auto;
+  width: 50%; }
+
 .btn, .btn:link, .btn:visited {
+  opacity: 0.85;
   text-align: center;
   letter-spacing: .2rem;
   font-weight: 100;
@@ -342,9 +345,9 @@ body {
   cursor: pointer;
   display: inline-block;
   padding: 2rem 5rem;
-  transition: all .2s;
+  transition: all 0.2s cubic-bezier(1, 0.01, 0, 0.69);
   border: none;
-  border-radius: 1rem;
+  border-radius: 2rem;
   margin: 2rem 0;
   box-shadow: 0 1rem 1rem rgba(17, 17, 17, 0.2); }
   @media (max-width: 37.5em) {
@@ -394,7 +397,7 @@ body {
     font-size: 1.6rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: currentColor;
+    color: #893dc2;
     padding: 1rem 3rem; }
   .form-group:not(:last-child) {
     margin-bottom: 2rem; }
@@ -407,7 +410,7 @@ body {
     width: 100%;
     display: block;
     margin: 0 auto;
-    transition: all .3s;
+    transition: all 0.3s cubic-bezier(0, -0.1, 0, 1.06);
     border: 0.1rem solid #893dc2; }
     .form-input:focus:invalid {
       border: 0.3rem solid #FF9F1C;
@@ -415,6 +418,7 @@ body {
       border-top: .3rem solid $color-primary;
       */ }
     .form-input:focus {
+      transform: scaleX(1.05);
       outline: none;
       box-shadow: 0 1rem 1rem rgba(17, 17, 17, 0.2);
       /*
@@ -738,11 +742,11 @@ body {
   /*  border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;*/
   position: relative;
-  height: 120vh;
+  height: 100vh;
   background-image: radial-gradient(circle farthest-corner at 0% 1rem, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), url("../img/bottle_2.jpg");
   background-size: cover;
-  --webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  --webkit-clip-path: polygon(0 0, 100% 0, 100%  75%, 50% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 100%); }
   @media (max-width: 56.25em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
