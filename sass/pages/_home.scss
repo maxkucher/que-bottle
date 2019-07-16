@@ -56,6 +56,7 @@
   url("../img/water.jpg");*/
   background-image: url("../img/bmob.gif");
   @include respond(phone){
+    background-repeat: no-repeat;
     padding: 4rem 1rem;
   }
 }

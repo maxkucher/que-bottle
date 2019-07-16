@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#38486B;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<g>
+	<g>
 	<g>
 		<g>
-			<polygon class="st0" points="64.74,248 3,216.45 3,142.83 64.74,175.08 124.5,142.83 124.5,220.66 			"/>
-			<polygon class="st0" points="63.75,109.17 3,142.83 64.74,175.08 124.5,142.83 			"/>
+			<polygon class="st0" points="15,44.76 4.66,39.65 4.66,27.73 15,32.95 25,27.73 25,40.33 			"/>
+			<polygon class="st0" points="14.83,22.27 4.66,27.73 15,32.95 25,27.73 			"/>
 		</g>
-		<line class="st0" x1="64.74" y1="175.08" x2="64.74" y2="248"/>
+		<line class="st0" x1="15" y1="32.95" x2="15" y2="44.76"/>
 	</g>
-	<g>
 		<g>
-			<polygon class="st0" points="186.24,248 124.5,216.45 124.5,142.83 186.24,175.08 246,142.83 246,220.66 			"/>
-			<polygon class="st0" points="185.25,109.17 124.5,142.83 186.24,175.08 246,142.83 			"/>
+		<g>
+			<polygon class="st0" points="35.33,44.76 25,39.65 25,27.73 35.33,32.95 45.34,27.73 45.34,40.33 			"/>
+			<polygon class="st0" points="35.17,22.27 25,27.73 35.33,32.95 45.34,27.73 			"/>
 		</g>
-		<line class="st0" x1="186.24" y1="175.08" x2="186.24" y2="248"/>
+			<line class="st0" x1="35.33" y1="32.95" x2="35.33" y2="44.76"/>
 	</g>
-	<g>
 		<g>
-			<polygon class="st0" points="125.49,142.83 63.75,111.28 63.75,37.66 125.49,69.91 185.25,37.66 185.25,115.48 			"/>
-			<polygon class="st0" points="124.5,4 63.75,37.66 125.49,69.91 185.25,37.66 			"/>
+		<g>
+			<polygon class="st0" points="25.17,27.73 14.83,22.62 14.83,10.69 25.17,15.91 35.17,10.69 35.17,23.3 			"/>
+			<polygon class="st0" points="25,5.24 14.83,10.69 25.17,15.91 35.17,10.69 			"/>
 		</g>
-		<line class="st0" x1="125.49" y1="69.91" x2="125.49" y2="142.83"/>
+			<line class="st0" x1="25.17" y1="15.91" x2="25.17" y2="27.73"/>
 	</g>
 </g>
 </svg>

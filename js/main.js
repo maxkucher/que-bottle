@@ -9,6 +9,15 @@ $(document).ready(() => {
     });
 
 
+    $('.navigate-to-details').on('click', function (e) {
+       $('html,body').animate({
+         scrollTop: $('#details')
+             .offset()
+             .top
+       }, 'slow');
+    });
+
+
     $('.navigate-to-gallery').on('click', function (e) {
         $('html,body').animate({
             scrollTop: $('.section-gallery')
