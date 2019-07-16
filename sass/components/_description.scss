@@ -16,7 +16,18 @@
     line-height: 3rem;
 
     &-color-secondary{
+      background-image: linear-gradient(to right, #e23d31,#214713);
+      -webkit-background-clip: text;
+      color: transparent;
+      /*
       color: $color-secondary;
+      */
+    }
+
+
+
+    &-color-red{
+      color: $red;
     }
 
     &-color-primary{

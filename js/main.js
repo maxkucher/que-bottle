@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-        $('.navigate-to-order-form').on('click', function(e)  {
+    $('.navigate-to-order-form').on('click', function (e) {
         $('html,body').animate({
             scrollTop: $('#submit-order-form')
                 .offset()
@@ -18,7 +18,7 @@ $(document).ready(() => {
     });
 
 
-    $('#submit-order-form').on('submit', function(e) {
+    $('#submit-order-form').on('submit', function (e) {
         e.preventDefault();
 
         const name = $('#name').val();
@@ -35,6 +35,9 @@ $(document).ready(() => {
             },
             dataType: 'json',
             success(data) {
+                $('#name').value = "";
+                $('#phone').value = "";
+                alert('Ваша заявка принята. Мы свяжемся с Вам в ближайшее время');
                 console.log(JSON.stringify(data));
             },
             error(error) {

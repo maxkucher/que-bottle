@@ -4,7 +4,8 @@
   vertical-align: middle;
   align-items: center;
   padding: 2rem;
-  background: $white;
+  background-image:   $main-gradient;
+
   position: fixed;
   bottom: 3rem;
   right: 3rem;
@@ -20,7 +21,7 @@
   &__link {
     font-size: 4rem;
     text-decoration: none;
-    color: $color-primary;
+    color: $white;
     transition: all .5s;
 
 

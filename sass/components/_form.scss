@@ -7,7 +7,7 @@
     font-size: 1.6rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: $white;
+    color: currentColor;
     padding: 1rem 3rem;
   }
 
@@ -16,32 +16,39 @@
   }
 
   &-input {
+
     font-size: 1.8rem;
     font-family: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2rem;
     background-color: $white;
-    border: none;
     width: 100%;
     display: block;
     margin: 0 auto;
     transition: all .3s;
-    border-bottom: .3rem solid transparent;
+    border: .1rem solid $color-secondary;
 
     &:focus:invalid {
-      border-bottom: .3rem solid $color-primary;
+      border: .3rem solid $color-primary;
+      /*
+      border-top: .3rem solid $color-primary;
+      */
+
     }
 
     &:focus {
       outline: none;
       box-shadow: 0 1rem 1rem rgba($black, .2);
-      border-bottom: .3rem solid green;
+      /*
+      border-top: .3rem solid green;
+      */
+      border: .3rem solid green;
 
     }
   }
 
   &-label {
-    color: $white;
+    color: $color-secondary;
     font-size: 1.2rem;
     font-weight: 700;
     margin-left: 1rem;

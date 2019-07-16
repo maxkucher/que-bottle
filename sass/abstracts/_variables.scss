@@ -1,6 +1,6 @@
 $color-primary: #FF9F1C;
 $color-primary-light: #FFBF69;
-$color-secondary: #2EC4B6;
+$color-secondary: #893dc2;
 $color-secondary-light: #CBF3F0;
 
 $white: #ffff;
@@ -12,3 +12,18 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+//Text color variables
+$red: #bc6261;
+
+$main-gradient: radial-gradient(circle farthest-corner at 0% 1rem , #fec564, transparent 50%),
+  // left top
+radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+  //  right top
+radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+  // right bottom
+radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent);
