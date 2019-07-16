@@ -36,23 +36,8 @@ radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
   // right bottom
 radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
 
-  /////// create a base coat to smooth
-  /////// corner gradients
 linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 
 $main-gradient:  linear-gradient(135deg,$grColor1RGBA, $grColor2RGBA);
 $main-gradient-2:  linear-gradient(20deg,$grColor1RGBA, $grColor2RGBA);
 $main-gradient-3:  linear-gradient(-20deg,$grColor1RGBA, $grColor2RGBA);
-
-
-  /* radial-gradient(circle farthest-corner at 0% 1rem , $grColor1, transparent 50%),
-  // left top
-radial-gradient(ellipse farthest-corner at 0 -25%, $grColor2, transparent 50%),
-radial-gradient(ellipse farthest-corner at 20% -50%, $grColor3, transparent 50%),
-radial-gradient(ellipse farthest-corner at 0 -25%, $grColor3, transparent 50%),
-radial-gradient(ellipse farthest-corner at 20% -50%, $grColor5, transparent 50%),
-  //  right top
-radial-gradient(ellipse farthest-corner at 100% 0, $grColor1, transparent 50%),
-radial-gradient(ellipse farthest-corner at 60% -20%, $grColor5, transparent 50%),
-  // right bottom
-radial-gradient(ellipse farthest-corner at 100% 100%, $grColor4, transparent);*/

@@ -5,17 +5,6 @@ $breakpoint args
 - tab-landsc
 - big-desktop
  */
-/* radial-gradient(circle farthest-corner at 0% 1rem , $grColor1, transparent 50%),
-  // left top
-radial-gradient(ellipse farthest-corner at 0 -25%, $grColor2, transparent 50%),
-radial-gradient(ellipse farthest-corner at 20% -50%, $grColor3, transparent 50%),
-radial-gradient(ellipse farthest-corner at 0 -25%, $grColor3, transparent 50%),
-radial-gradient(ellipse farthest-corner at 20% -50%, $grColor5, transparent 50%),
-  //  right top
-radial-gradient(ellipse farthest-corner at 100% 0, $grColor1, transparent 50%),
-radial-gradient(ellipse farthest-corner at 60% -20%, $grColor5, transparent 50%),
-  // right bottom
-radial-gradient(ellipse farthest-corner at 100% 100%, $grColor4, transparent);*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap");
 @keyframes animation-top {
   0% {
@@ -101,7 +90,7 @@ body {
   line-height: 1.7rem; }
 
 .heading-prime {
-  color: #ffff;
+  color: currentColor;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 5rem;
@@ -365,7 +354,7 @@ body {
   cursor: pointer;
   display: inline-block;
   padding: 2rem 5rem;
-  transition: all 0.2s cubic-bezier(1, 0.01, 0, 0.69);
+  transition: all .2s ease-in;
   border: none;
   border-radius: 2rem;
   margin: 2rem 0;
@@ -376,8 +365,8 @@ body {
       font-size: 1.5rem; } }
 
 .btn:hover, .btn:active {
-  transform: translateY(0.3rem);
-  box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.2); }
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.75rem 0.5rem rgba(17, 17, 17, 0.2); }
   .btn:hover:after, .btn:active:after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -720,46 +709,6 @@ body {
     .footer-logo-img {
       max-width: 20%;
       height: auto; }
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
-  @media (max-width: 56.25em) {
-    .row {
-      max-width: 50rem;
-      padding: 0 2rem; } }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-      @media (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important; } }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
-  .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
-  .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
 
 .header {
   /*  border-top-right-radius: 1rem;
