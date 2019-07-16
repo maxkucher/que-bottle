@@ -105,7 +105,7 @@
 
 .bottom-panel{
   min-width: 100vw;
-  min-height: 10vh;
+  min-height: 1vh;
   background-image: $main-gradient
   /*
   background-image: linear-gradient(to right, $color-secondary, $color-primary);
@@ -127,6 +127,7 @@
     }
   }
 }
+
 
 
 .section-video{

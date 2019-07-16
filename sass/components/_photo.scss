@@ -1,8 +1,13 @@
 .photo {
-  max-width: 90%;
+  max-width: 60%;
   border-radius: 5rem;
   margin: auto;
   transition: all 400ms ease-in;
+
+
+  @include respond(phone){
+    max-width: 90%;
+  }
 
 
   &:hover, &:active{

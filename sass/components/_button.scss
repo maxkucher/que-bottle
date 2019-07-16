@@ -3,10 +3,9 @@
   &,
   &:link,
   &:visited {
-    opacity: 0.85;
     text-align: center;
     letter-spacing: .2rem;
-    font-weight: 100;
+    font-weight: 400;
     font-family: inherit;
     font-size: 2rem;
     text-transform: uppercase;
@@ -14,13 +13,13 @@
     cursor: pointer;
     display: inline-block;
     padding: 2rem 5rem;
-    transition: all .2s cubic-bezier(1,.01,0,.69);
+    transition: all .2s cubic-bezier(1, .01, 0, .69);
     border: none;
     border-radius: 2rem;
     margin: 2rem 0;
     box-shadow: 0 1rem 1rem rgba($black, 0.2);
 
-    @include respond(phone){
+    @include respond(phone) {
       padding: 1.5rem 3rem;
       font-size: 1.5rem;
     }
@@ -48,24 +47,16 @@
     background-color: $white;
 
     &:hover {
-    /*  background-image: linear-gradient(to right, $color-secondary, $color-primary);*/
-      background-image:   radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-      radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-        // left top
-      radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-      radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-        //  right top
-      radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-      radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-        // right bottom
-      radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),;
-      color: $white;
+      /*  background-image: linear-gradient(to right, $color-secondary, $color-primary);*/
+      background-image: $main-gradient;
+      color: $color-secondary;
     }
   }
 
   &-dark {
-    color: $white;
+    color: $color-secondary;
     background-image: $main-gradient;
+
     &:hover {
       color: currentColor;
       background-color: $white;

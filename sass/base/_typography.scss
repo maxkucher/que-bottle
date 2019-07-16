@@ -82,12 +82,16 @@ body {
   }
 
   &-orange {
-    background-image: linear-gradient(to right, rgba($color-primary, 1), lighten(rgba($color-primary, 1), 20%));
+    background-image: linear-gradient(to right, rgba($color-primary, 1), rgba($red, 1));
 
   }
 
   &-blue {
     background-image: linear-gradient(to right, $color-secondary, lighten(rgba($color-secondary, 10%), 20%));
+  }
+
+  &-instagram {
+    background-image: $instagram-gradient;
   }
 
   @include respond(tab-port) {

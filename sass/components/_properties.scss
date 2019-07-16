@@ -21,17 +21,17 @@
     */
 
     transition: all 400ms ease-in;
-    &:hover, &:active {
+/*    &:hover, &:active {
       background-color: $color-primary;
-      /*
+      !*
       border: 1px solid transparent;
-      */
-      /*
+      *!
+      !*
       color: $white;
-      */
+      *!
       transform: translateY(.5rem);
 
-    }
+    }*/
 
   }
 
@@ -44,8 +44,8 @@
 
     &-text {
       margin-top: 2rem;
-      font-size: 1.5rem;
-      font-weight: 300;
+      font-size: 2rem;
+      font-weight: 200;
       color: currentColor;
     }
 

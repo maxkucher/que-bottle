@@ -5,6 +5,17 @@ $breakpoint args
 - tab-landsc
 - big-desktop
  */
+/* radial-gradient(circle farthest-corner at 0% 1rem , $grColor1, transparent 50%),
+  // left top
+radial-gradient(ellipse farthest-corner at 0 -25%, $grColor2, transparent 50%),
+radial-gradient(ellipse farthest-corner at 20% -50%, $grColor3, transparent 50%),
+radial-gradient(ellipse farthest-corner at 0 -25%, $grColor3, transparent 50%),
+radial-gradient(ellipse farthest-corner at 20% -50%, $grColor5, transparent 50%),
+  //  right top
+radial-gradient(ellipse farthest-corner at 100% 0, $grColor1, transparent 50%),
+radial-gradient(ellipse farthest-corner at 60% -20%, $grColor5, transparent 50%),
+  // right bottom
+radial-gradient(ellipse farthest-corner at 100% 100%, $grColor4, transparent);*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap");
 @keyframes animation-top {
   0% {
@@ -21,6 +32,14 @@ $breakpoint args
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@keyframes animation-background {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
 
 @keyframes animation-left {
   0% {
@@ -137,15 +156,17 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   color: transparent;
-  background-image: linear-gradient(to right, #CBF3F0, #893dc2);
+  background-image: linear-gradient(to right, #CBF3F0, #38486b);
   -webkit-background-clip: text;
   margin-bottom: 3rem; }
   .heading-secondary-white {
     background-image: linear-gradient(to right, #ffff, #ffff); }
   .heading-secondary-orange {
-    background-image: linear-gradient(to right, #ff9f1c, #ffca82); }
+    background-image: linear-gradient(to right, #ff9f1c, #e23d31); }
   .heading-secondary-blue {
-    background-image: linear-gradient(to right, #893dc2, #b88bda); }
+    background-image: linear-gradient(to right, #38486b, #5e76ab); }
+  .heading-secondary-instagram {
+    background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
   @media (max-width: 56.25em) {
     .heading-secondary {
       line-height: initial;
@@ -161,7 +182,7 @@ body {
   word-spacing: .8rem;
   letter-spacing: .1rem;
   font-weight: 100;
-  background-color: rgba(137, 61, 194, 0.4);
+  background-color: rgba(56, 72, 107, 0.4);
   padding: 3rem 1rem;
   border-radius: .3rem; }
   @media (max-width: 37.5em) {
@@ -296,8 +317,8 @@ body {
 
 .bottom-panel {
   min-width: 100vw;
-  min-height: 10vh;
-  background-image: radial-gradient(circle farthest-corner at 0% 1rem, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent); }
+  min-height: 1vh;
+  background-image: linear-gradient(135deg, #ffedd0, #a1e6ff); }
 
 .section-instagram {
   background-color: #ffff;
@@ -334,10 +355,9 @@ body {
   width: 50%; }
 
 .btn, .btn:link, .btn:visited {
-  opacity: 0.85;
   text-align: center;
   letter-spacing: .2rem;
-  font-weight: 100;
+  font-weight: 400;
   font-family: inherit;
   font-size: 2rem;
   text-transform: uppercase;
@@ -368,25 +388,28 @@ body {
   outline: none; }
 
 .btn-white {
-  color: #893dc2;
+  color: #38486b;
   background-color: #ffff; }
   .btn-white:hover {
     /*  background-image: linear-gradient(to right, $color-secondary, $color-primary);*/
-    background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent);
-    color: #ffff; }
+    background-image: linear-gradient(135deg, #ffedd0, #a1e6ff);
+    color: #38486b; }
 
 .btn-dark {
-  color: #ffff;
-  background-image: radial-gradient(circle farthest-corner at 0% 1rem, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent); }
+  color: #38486b;
+  background-image: linear-gradient(135deg, #ffedd0, #a1e6ff); }
   .btn-dark:hover {
     color: currentColor;
     background-color: #ffff; }
 
 .photo {
-  max-width: 90%;
+  max-width: 60%;
   border-radius: 5rem;
   margin: auto;
   transition: all 400ms ease-in; }
+  @media (max-width: 37.5em) {
+    .photo {
+      max-width: 90%; } }
   .photo:hover, .photo:active {
     transform: translateY(0.5rem) scale(1.05); }
 
@@ -397,7 +420,7 @@ body {
     font-size: 1.6rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #893dc2;
+    color: #38486b;
     padding: 1rem 3rem; }
   .form-group:not(:last-child) {
     margin-bottom: 2rem; }
@@ -411,7 +434,7 @@ body {
     display: block;
     margin: 0 auto;
     transition: all 0.3s cubic-bezier(0, -0.1, 0, 1.06);
-    border: 0.1rem solid #893dc2; }
+    border: 0.1rem solid #38486b; }
     .form-input:focus:invalid {
       border: 0.3rem solid #FF9F1C;
       /*
@@ -426,7 +449,7 @@ body {
       */
       border: .3rem solid green; }
   .form-label {
-    color: #893dc2;
+    color: #38486b;
     font-size: 1.2rem;
     font-weight: 700;
     margin-left: 1rem;
@@ -476,7 +499,7 @@ body {
     .features-card__list-item {
       font-size: 2rem;
       font-weight: 400;
-      color: #893dc2;
+      color: #38486b;
       margin-top: .5rem; }
       .features-card__list-item:not(:last-child) {
         margin-bottom: .5rem; }
@@ -486,7 +509,7 @@ body {
 
 .card {
   background-color: #ffffff;
-  color: #893dc2;
+  color: #38486b;
   box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.2);
   padding: 1rem 1rem;
   border-radius: 1rem;
@@ -527,7 +550,7 @@ body {
   vertical-align: middle;
   align-items: center;
   padding: 2rem;
-  background-image: radial-gradient(circle farthest-corner at 0% 1rem, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent);
+  background-image: linear-gradient(135deg, #ffedd0, #a1e6ff);
   position: fixed;
   bottom: 3rem;
   right: 3rem;
@@ -542,7 +565,7 @@ body {
   .checkout-button__link {
     font-size: 4rem;
     text-decoration: none;
-    color: #ffff;
+    color: #38486b;
     transition: all .5s; }
   .checkout-button__icon {
     width: 100%;
@@ -598,16 +621,18 @@ body {
     /*
     border: 1px solid $color-primary;
     */
-    transition: all 400ms ease-in; }
-    .properties__container:hover, .properties__container:active {
-      background-color: #FF9F1C;
-      /*
+    transition: all 400ms ease-in;
+    /*    &:hover, &:active {
+      background-color: $color-primary;
+      !*
       border: 1px solid transparent;
-      */
-      /*
+      *!
+      !*
       color: $white;
-      */
-      transform: translateY(0.5rem); }
+      *!
+      transform: translateY(.5rem);
+
+    }*/ }
   .properties__property {
     text-align: center;
     display: flex;
@@ -616,8 +641,8 @@ body {
     flex: 0 0 30%; }
     .properties__property-text {
       margin-top: 2rem;
-      font-size: 1.5rem;
-      font-weight: 300;
+      font-size: 2rem;
+      font-weight: 200;
       color: currentColor; }
   .properties__property-icon {
     width: 6rem;
@@ -625,11 +650,9 @@ body {
 
 .description {
   display: flex;
-  justify-content: space-around;
-  vertical-align: middle;
+  flex-direction: row;
+  justify-content: center;
   align-items: center; }
-  .description-image-text {
-    flex-direction: row-reverse; }
   .description__content {
     flex: 0 0 60%;
     font-size: 3rem;
@@ -645,13 +668,13 @@ body {
       color: $color-secondary;
       */ }
     .description__content-color-red {
-      color: #bc6261; }
+      color: #e23d31; }
     .description__content-color-primary {
       color: #FF9F1C; }
   .description__image {
-    flex: 1; }
+    text-align: center; }
   .description .image {
-    width: 90%;
+    max-width: 20vw;
     height: auto; }
   @media (max-width: 37.5em) {
     .description {
@@ -743,10 +766,15 @@ body {
   border-top-left-radius: 1rem;*/
   position: relative;
   height: 100vh;
-  background-image: radial-gradient(circle farthest-corner at 0% 1rem, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), url("../img/bottle_2.jpg");
-  background-size: cover;
+  background-image: linear-gradient(135deg, #ffedd0, #a1e6ff);
+  animation-name: animation-background;
+  background-size: 400% 400%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
   --webkit-clip-path: polygon(0 0, 100% 0, 100%  75%, 50% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 100%);
+  color: #ffff; }
   @media (max-width: 56.25em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

@@ -1,12 +1,9 @@
 .description {
   display: flex;
-  justify-content: space-around;
-  vertical-align: middle;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 
-  &-image-text{
-    flex-direction: row-reverse;
-  }
   &__content {
     flex: 0 0 60%;
     font-size: 3rem;
@@ -16,7 +13,7 @@
     line-height: 3rem;
 
     &-color-secondary{
-      background-image: linear-gradient(to right, #e23d31,#214713);
+      background-image: linear-gradient(to right, $red,#214713);
       -webkit-background-clip: text;
       color: transparent;
       /*
@@ -38,11 +35,12 @@
   }
 
   &__image {
-    flex: 1;
+    text-align: center;
+
   }
 
   .image {
-    width: 90%;
+    max-width: 20vw;
     height: auto;
   }
 
