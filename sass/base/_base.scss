@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
  /* background: linear-gradient(63deg, $color-primary 23%, transparent 23%) 7px 0,
   linear-gradient(63deg, transparent 74%, $color-primary 78%),
   linear-gradient(63deg, transparent 34%, $color-primary 38%, $color-primary 58%, transparent 62%),
