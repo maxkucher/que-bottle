@@ -50,11 +50,24 @@
   }
 }
 
+
+.section-description{
+
+  &-forest{
+    text-align: center;
+    background-position: center;
+    padding: 12rem 0;
+    background-image: url("../img/forest.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .section-form {
   padding: 1rem 0;
 /*  background-image: linear-gradient($white 0, $color-secondary),
   url("../img/water.jpg");*/
-  background-image: url("../img/bmob.gif");
   @include respond(phone){
     background-repeat: no-repeat;
     padding: 4rem 1rem;
@@ -89,6 +102,8 @@
   position: relative;
 
   &-form {
+    background-image: url("../img/bmob.gif");
+
     width: 70%;
     margin: auto;
     border-radius: 1rem;

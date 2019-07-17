@@ -122,22 +122,21 @@ body {
 .forest-text {
   padding: 20rem 2rem;
   font-size: 3.5rem;
-  text-align: center;
   line-height: 5rem;
-  font-weight: 300;
-  background-image: linear-gradient(to bottom, white 5%, rgba(0, 0, 0, 0) 50%, white 95%), url("../img/forest.jpg");
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  font-weight: 300; }
   @media (max-width: 37.5em) {
     .forest-text {
-      font-size: 2rem;
-      line-height: 3rem;
+      padding: 2rem 5rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
       background-size: 100%; } }
   .forest-text__bold {
-    font-weight: 700;
+    font-weight: 400;
     line-height: 3rem;
     margin-bottom: 2rem; }
+    @media (max-width: 37.5em) {
+      .forest-text__bold {
+        line-height: inherit; } }
 
 .heading-secondary {
   padding: 5rem 2rem;
@@ -155,7 +154,7 @@ body {
   .heading-secondary-white {
     background-image: linear-gradient(to right, #ffff, #ffff); }
   .heading-secondary-orange {
-    background-image: linear-gradient(to right, #ff9f1c, #e23d31); }
+    background-image: linear-gradient(to right, #f08f38, #d64173); }
   .heading-secondary-blue {
     background-image: linear-gradient(to right, #38486b, #5e76ab); }
   .heading-secondary-instagram {
@@ -193,6 +192,9 @@ body {
     animation-name: animation-left; }
   .animation-right {
     animation-name: animation-right; }
+
+.bottle-gif-background {
+  background-image: url("../img/bmob.gif") !important; }
 
 .center-text {
   text-align: center !important; }
@@ -271,11 +273,19 @@ body {
     .section-properties {
       min-height: 80vh; } }
 
+.section-description-forest {
+  text-align: center;
+  background-position: center;
+  padding: 12rem 0;
+  background-image: url("../img/forest.jpg");
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .section-form {
   padding: 1rem 0;
   /*  background-image: linear-gradient($white 0, $color-secondary),
-  url("../img/water.jpg");*/
-  background-image: url("../img/bmob.gif"); }
+  url("../img/water.jpg");*/ }
   @media (max-width: 37.5em) {
     .section-form {
       background-repeat: no-repeat;
@@ -300,6 +310,7 @@ body {
 .order {
   position: relative; }
   .order-form {
+    background-image: url("../img/bmob.gif");
     width: 70%;
     margin: auto;
     border-radius: 1rem;
