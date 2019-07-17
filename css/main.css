@@ -119,6 +119,16 @@ body {
         font-size: 3rem;
         line-height: 3rem; } }
 
+.thank-you-text {
+  color: #38486b;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center; }
+  @media (max-width: 37.5em) {
+    .thank-you-text {
+      font-size: 5rem;
+      line-height: 5rem; } }
+
 .forest-text {
   padding: 20rem 2rem;
   font-size: 3.5rem;
@@ -139,7 +149,7 @@ body {
         line-height: inherit; } }
 
 .heading-secondary {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem 3rem 2rem;
   letter-spacing: .2rem;
   width: 100%;
   display: inline-block;
@@ -151,6 +161,9 @@ body {
   background-image: linear-gradient(to right, #CBF3F0, #38486b);
   -webkit-background-clip: text;
   margin-bottom: 3rem; }
+  .heading-secondary-large {
+    font-size: 7rem;
+    line-height: 7rem; }
   .heading-secondary-white {
     background-image: linear-gradient(to right, #ffff, #ffff); }
   .heading-secondary-orange {
@@ -176,7 +189,8 @@ body {
   font-weight: 100;
   background-color: rgba(56, 72, 107, 0.4);
   padding: 3rem 1rem;
-  border-radius: .3rem; }
+  border-radius: .3rem;
+  color: transparent; }
   @media (max-width: 37.5em) {
     .paragraph {
       text-align: left; } }
@@ -359,6 +373,28 @@ body {
   margin: auto;
   width: 50%; }
 
+.container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #ffedd0, #a1e6ff);
+  animation-name: animation-background;
+  background-size: 400% 100%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in; }
+  .container .thank-you-card {
+    padding: 10rem 2rem; }
+
+.social-icons {
+  width: 50%;
+  margin: 5rem auto; }
+  @media (max-width: 37.5em) {
+    .social-icons {
+      width: 98%; } }
+
 .btn, .btn:link, .btn:visited {
   text-align: center;
   letter-spacing: .2rem;
@@ -427,6 +463,10 @@ body {
     text-align: center;
     color: #38486b;
     padding: 1rem 3rem; }
+  .form .order-details {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    font-weight: 200; }
   .form-group:not(:last-child) {
     margin-bottom: 2rem; }
   .form-input {
@@ -468,6 +508,14 @@ body {
   .form .btn {
     width: 100%;
     display: block; }
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15rem; }
+  @media (max-width: 37.5em) {
+    .social-icons {
+      grid-column-gap: 5rem; } }
 
 .features-card {
   min-height: 95vh;

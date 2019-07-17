@@ -43,6 +43,18 @@ body {
   }
 }
 
+.thank-you-text{
+  color: $color-secondary;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center;
+
+  @include respond(phone){
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
 .forest-text {
   padding: 20rem 2rem;
   font-size: 3.5rem;
@@ -69,7 +81,7 @@ body {
 }
 
 .heading-secondary {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem 3rem 2rem;
   letter-spacing: .2rem;
   width: 100%;
   display: inline-block;
@@ -81,6 +93,13 @@ body {
   background-image: linear-gradient(to right, $color-secondary-light, $color-secondary);
   -webkit-background-clip: text;
   margin-bottom: 3rem;
+
+  &-large{
+    font-size: 7rem;
+    line-height: 7rem;
+
+
+  }
 
   &-white {
     background-image: linear-gradient(to right, $white, $white);
@@ -119,7 +138,7 @@ body {
   background-color: rgba($color-secondary, 0.4);
   padding: 3rem 1rem;
   border-radius: .3rem;
-
+  color: transparent;
   @include respond(phone) {
     text-align: left;
   }

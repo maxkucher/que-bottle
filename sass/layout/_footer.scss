@@ -13,6 +13,8 @@
   justify-items: center;
   grid-template-columns: 1fr 1fr;
 
+
+
   @include respond(tab-port) {
     padding: 8rem 2rem;
     grid-template-columns: 1fr;
