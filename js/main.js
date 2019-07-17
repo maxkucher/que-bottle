@@ -35,7 +35,7 @@ $(document).ready(() => {
 
 
         $.ajax({
-            url: 'http://localhost:8080/orders',
+            url: 'https://shopapi.stewk.com/orders',
             type: 'post',
             data: JSON.stringify({name, phoneNumber}),
             headers: {
@@ -44,12 +44,13 @@ $(document).ready(() => {
             },
             dataType: 'json',
             success(data) {
-                $('#name').value = "";
-                $('#phone').value = "";
+                $('#name').val("");
+                $('#phone').val("");
                 alert('Ваша заявка принята. Мы свяжемся с Вам в ближайшее время');
                 console.log(JSON.stringify(data));
             },
             error(error) {
+                alert('Ошибка отправки заказа. Попробуйте ещё раз.');
                 console.log(error);
             }
         });
