@@ -55,11 +55,13 @@ body {
   @include respond(phone) {
     font-size: 2rem;
     line-height: 3rem;
+    background-size: 100%;
   }
+
 
   &__bold {
     font-weight: 700;
-    line-height: 10rem;
+    line-height: 5rem;
   }
 }
 
