@@ -65,7 +65,7 @@
         <div class="description description-image-text">
             <p class="description__content description__content-color-blue">
 
-                que не протикает, не заванивается и не бьется, легко стирается и отлично дополняет любой лук.
+                que не протекает, не пахнет и не бьется, легко стирается и отлично дополняет любой лук.
                 За счет широкого горлышка у вас будет возможность взять с собой освежающий летний коктель.
                 Также особый вид силикона отталкивает пятна, что позволяет que bottle всегда выглядеть как новой.
 
@@ -191,9 +191,9 @@
     </div>
     <div class="section-description">
         <div class="forest-text">
-            <span class="forest-text__bold">Kаждую минуту в мире покупается миллион пластиковых бутылок и 91% всей пластмассы не перерабатывается. К счастью, популярность многоразовых бутылок воды растет, но эти альтернативы не столь практичны, как que.</span>
+            <span class="forest-text__bold">Kаждую минуту в мире покупается миллион пластиковых бутылок и 91% всей пластмассы не перерабатывается. </span>
             <br/>
-            <p>Kаждую минуту в мире покупается миллион пластиковых бутылок и 91% всей пластмассы не перерабатывается. К счастью, популярность многоразовых бутылок воды растет, но эти альтернативы не столь практичны, как que.</p>
+            <p> К счастью, популярность многоразовых бутылок воды растет, но эти альтернативы не столь практичны, как que.</p>
             Из-за своей возможности складываться que bottle можно назвать самой практичной многоразовой бутылкой, а отсутвствие BPA и пластика делает ее еще экологичнее.
         </div>
     </div>
@@ -209,7 +209,7 @@
                 <div class="card__content">
                     <h5 class="card__content-header">Bonfire Red</h5>
                     <p class="card__content-price">250 UAH</p>
-                    <button class="btn btn-dark navigate-to-order-form">Заказать</button>
+                    <button class="btn btn-dark navigate-to-order-form order-btn"  data-color="bonfire red">Заказать</button>
                 </div>
             </div>
             <div class="card">
@@ -220,7 +220,7 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Midnight Blue</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
+                                <button class="btn btn-dark navigate-to-order-form order-btn" data-color="midnight blue">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -232,7 +232,7 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Citrus Yellow</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form order-btn" data-color="citrus yellow">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -244,7 +244,7 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Coral Pink</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form order-btn" data-color="coral pink">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -256,7 +256,7 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Orange</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form order-btn" data-color="orange">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -268,7 +268,7 @@
                     <div class="card__content">
                         <h5 class="card__content-header">Misty</h5>
                         <p class="card__content-price">250 UAH</p>
-                        <button class="btn btn-dark navigate-to-order-form">Заказать</button>
+                        <button class="btn btn-dark navigate-to-order-form order-btn" data-color="misty" >Заказать</button>
                     </div>
                 </div>
             </div>
@@ -279,10 +279,7 @@
         <div class="instargam-container">
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-e610ba74-9497-4901-9832-266d3e45e758"></div>
-           <!-- <iframe src="https://snapwidget.com/embed/712416" class="snapwidget-widget" allowtransparency="true"
-                    frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>-->
             </div>
-        </div>
     </section>
     <section class="section-form">
 
@@ -303,17 +300,14 @@
                         <input class="form-input" type="text" name="phoneNumber" placeholder="Номер телефона"
                                id="phone" required>
                         <label class="form-label" for="phone">Номер телефона</label>
+
+                        <input type="hidden" name="color" id="input-color" value="">
                     </div>
                     <button class="btn btn-dark">Отправить заявку</button>
                 </form>
             </div>
         </div>
     </section>
-
-<!--
-    <img src="img/bmob.gif" alt="" class="bmob-image">
--->
-
 
 </main>
 <footer class="footer">
@@ -330,30 +324,18 @@
     <div class="footer__social">
         <a href="#" class="social-link">
             <img src="img/icons/telegram.svg" class="social-icon"/>
-
-            <!-- <svg  class="social-icon" >
-                 <use xlink:href="img/sprite2.svg#telegram"></use>
-             </svg>-->
         </a>
         <a href="#" class="social-link">
             <img src="img/icons/whatsapp.svg" class="social-icon"/>
-            <!--  <svg  class="social-icon" >
-                  <use xlink:href="img/sprite2.svg#whatsapp"></use>
-              </svg>-->
+
         </a>
         <a href="#" class="social-link">
             <img src="img/icons/instagram.svg" class="social-icon"/>
 
-          <!--  <svg  class="social-icon" >
-                <use xlink:href="img/sprite2.svg#instagram"></use>
-            </svg>-->
         </a>
         <a href="#" class="social-link">
             <img src="img/icons/viber.svg" class="social-icon"/>
 
-            <!--  <svg  class="social-icon" >
-                  <use xlink:href="img/sprite2.svg#viber"></use>
-              </svg>-->
         </a>
     </div>
 

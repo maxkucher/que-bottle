@@ -52,6 +52,8 @@ body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 1) 95%),
   url("../img/forest.jpg");
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
   @include respond(phone) {
     font-size: 2rem;
     line-height: 3rem;
@@ -61,7 +63,8 @@ body {
 
   &__bold {
     font-weight: 700;
-    line-height: 5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
   }
 }
 

@@ -126,14 +126,18 @@ body {
   line-height: 5rem;
   font-weight: 300;
   background-image: linear-gradient(to bottom, white 5%, rgba(0, 0, 0, 0) 50%, white 95%), url("../img/forest.jpg");
-  color: white; }
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media (max-width: 37.5em) {
     .forest-text {
       font-size: 2rem;
-      line-height: 3rem; } }
+      line-height: 3rem;
+      background-size: 100%; } }
   .forest-text__bold {
     font-weight: 700;
-    line-height: 10rem; }
+    line-height: 3rem;
+    margin-bottom: 2rem; }
 
 .heading-secondary {
   padding: 5rem 2rem;
@@ -153,7 +157,7 @@ body {
   .heading-secondary-orange {
     background-image: linear-gradient(to right, #ff9f1c, #e23d31); }
   .heading-secondary-blue {
-    background-image: linear-gradient(to right, #f08f38, #d64173); }
+    background-image: linear-gradient(to right, #38486b, #5e76ab); }
   .heading-secondary-instagram {
     background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
   @media (max-width: 56.25em) {

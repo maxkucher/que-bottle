@@ -1,5 +1,10 @@
 $(document).ready(() => {
 
+    $('.order-btn').on('click',function (e) {
+       const colorSelected = $(this).attr('data-color');
+       $('#input-color').val(colorSelected);
+    });
+
     $('.navigate-to-order-form').on('click', function (e) {
         $('html,body').animate({
             scrollTop: $('#submit-order-form')
@@ -31,7 +36,7 @@ $(document).ready(() => {
         e.preventDefault();
 
         const name = $('#name').val();
-        const phoneNumber = $('#phone').val();
+        const phoneNumber = $('#phone').val()+" .Color: "+$('#input-color').val();
 
 
         $.ajax({
@@ -46,6 +51,7 @@ $(document).ready(() => {
             success(data) {
                 $('#name').val("");
                 $('#phone').val("");
+                $('#input-color').val("");
                 alert('Ваша заявка принята. Мы свяжемся с Вам в ближайшее время');
                 console.log(JSON.stringify(data));
             },
