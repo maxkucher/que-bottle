@@ -126,7 +126,7 @@ body {
   text-align: center; }
   @media (max-width: 37.5em) {
     .thank-you-text {
-      font-size: 5rem;
+      font-size: 3.5rem;
       line-height: 5rem; } }
 
 .forest-text {
@@ -393,7 +393,8 @@ body {
   margin: 5rem auto; }
   @media (max-width: 37.5em) {
     .social-icons {
-      width: 98%; } }
+      width: 80%;
+      margin: 5rem auto; } }
 
 .btn, .btn:link, .btn:visited {
   text-align: center;
@@ -515,7 +516,7 @@ body {
   grid-column-gap: 15rem; }
   @media (max-width: 37.5em) {
     .social-icons {
-      grid-column-gap: 5rem; } }
+      grid-column-gap: 6rem; } }
 
 .features-card {
   min-height: 95vh;
